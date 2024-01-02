@@ -1,3 +1,20 @@
+<style>
+    table {
+        border-collapse: collapse;
+        border-style: solid;
+        border-color: black;
+        border-width: thin;
+    }
+
+    td, th {
+        border-style: solid;
+        border-color: black;
+        border-width: thin;
+        padding: 4px;
+    }
+</style>
+
+
 # C Project 2
 
 ## Statement
@@ -34,6 +51,8 @@ requirements set by the instructor.
 14. Presentation and Explanations: Ensure that you can explain and present the project to the
 instructor or peers, highlighting key features and design decisions.
 
+<div style="page-break-after: always"></div>
+
 ## Features
 
 | Index |                          Feature                          |
@@ -59,6 +78,8 @@ instructor or peers, highlighting key features and design decisions.
 |  7.3  |        Delete a user from the important user list.        |
 |  7.4  |                 Display important users.                  |
 |  8.1  |                   Have an activity log.                   |
+
+<div style="page-break-after: always"></div>
 
 ## Runtime scenarios
 
@@ -94,6 +115,8 @@ instructor or peers, highlighting key features and design decisions.
 |  1.   |   3   |                   -                   |        The user has chosen to exit the application.        |
 |  2.   |   -   | Thank you for using this application! | The user receives a message and the application is closed. |
 
+<div style="page-break-after: always"></div>
+
 ### Create a financial account
 
 | Index |      Input      |                                      Output                                      |                           Description                           |
@@ -118,6 +141,8 @@ instructor or peers, highlighting key features and design decisions.
 |  7.   |        2         |                                                 -                                                 |                The input is received by the application.                 |
 |  8.   |        -         |                               The account was updated successfully.                               |     The user is notified that the account was updated successfully.      |
 
+<div style="page-break-after: always"></div>
+
 ### Delete a financial account
 
 | Index | Input |                                                    Output                                                     |                                 Description                                  |
@@ -139,6 +164,8 @@ instructor or peers, highlighting key features and design decisions.
 |  4.   |   -   |                           Input the amount of money that will be deposited.                           |   The user is asked to input the amount of money that will be deposited.    |
 |  5.   |  5.4  |                                                   -                                                   |                  The input is received by the application.                  |
 |  6.   |   -   |                                  The deposit was made successfully!                                   |        The user is notified that the deposit was made successfully.         |
+
+<div style="page-break-after: always"></div>
 
 ### Withdraw money from a financial account
 
@@ -165,6 +192,8 @@ instructor or peers, highlighting key features and design decisions.
 |  8.   |   -   | Do you want to transfer $3 from <account name> to <account name> which is owned by <account username>? (y/n) |                       The user is asked to confirm the transfer.                        |
 |  9.   |   y   |                                                      -                                                       |                           The application receives the input.                           |
 |  10.  |   -   |                                         The transfer was successful!                                         |                 The user is notified that the transfer was successful.                  |
+
+<div style="page-break-after: always"></div>
 
 ### Make a payment from a financial account
 
@@ -193,6 +222,8 @@ instructor or peers, highlighting key features and design decisions.
 |  1.   |   9   |                                        -                                        | The user has chosen to display the balances of all accounts. |
 |  2.   |   -   | Balances:<br> a list with the id, name and balance of all accounts of the user. |    The application displays the balance of all accounts.     |
 
+<div style="page-break-after: always"></div>
+
 ### Print the transactions of a selected account
 
 | Index | Input |                       Output                        |                                          Description                                          |
@@ -210,6 +241,8 @@ instructor or peers, highlighting key features and design decisions.
 |  2.   |   -   | Input the id of the account:<br>A list of accounts. | The user is asked to input the id of the account of which the expenses will be displayed. |
 |  3.   |   1   |                          -                          |                         The input is received by the application.                         |
 |  4.   |   -   |          Expenses:<br>A list of expenses.           | The application displays the expenses that were made using the account with the input id. |
+
+<div style="page-break-after: always"></div>
 
 ### Add a user to the list of important users
 
@@ -232,6 +265,8 @@ instructor or peers, highlighting key features and design decisions.
 |  4.   |             -             |                    Input the new description of the important user.                     |             The user is asked to input an updated description of the important user.              |
 |  5.   | An really important user. |                                            -                                            |                             The input is received by the application.                             |
 |  6.   |             -             |                           The user was updated successfully!                            |          The user is notified that the user with the input id was updated successfully.           |
+
+<div style="page-break-after: always"></div>
 
 ### Delete an important user from the list of important users
 
