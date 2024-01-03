@@ -5,4 +5,7 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(cp2 main.c
         libs/validation/validation.h
-        libs/validation/validation.c)
+        libs/validation/validation.c
+        libs/dbInteraction/users/users.h
+        libs/models/models.h
+        libs/dbInteraction/users/users.c)

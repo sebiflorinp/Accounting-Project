@@ -2,18 +2,18 @@
 #define CP2_VALIDATION_H
 
 #include <stdbool.h>
-// id validator
+    // id validator
     bool validateId(char* id);
 
-// username validator
+    // username validator
     bool validateUsername(char* username);
 
-// password validator
+    // password validator
     bool validatePassword(char* password);
 
-// value validator
+    // value validator
     bool validateValue(char* value);
 
-// type validator
+    // type validator
     bool validateType(char* type);
 #endif //CP2_VALIDATION_H
