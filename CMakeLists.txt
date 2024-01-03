@@ -3,4 +3,6 @@ project(cp2 C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(cp2 main.c)
+add_executable(cp2 main.c
+        libs/validation/validation.h
+        libs/validation/validation.c)
