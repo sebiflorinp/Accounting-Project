@@ -1,3 +1,3 @@
-4 1 bdaadvfgfa 0.000000 Savings
-5 2 bdaadvfgfa 0.000000 Savings
-6 3 bdaadvfgfa 0.000000 Savings
+1 1 SavingAccount 30.000000 Savings
+2 1 CreditAccount 0.000000 Credits
+3 2 SavingsAccount 140.000000 Savings

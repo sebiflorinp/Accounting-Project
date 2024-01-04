@@ -10,10 +10,10 @@
     // transaction model
     typedef struct {
         int id;
-        int userId;
-        int type;
+        int sourceAccountId;
+        char* type;
         float value;
-        int receiverId;
+        int destinationAccountId;
         int day;
         int month;
         int year;

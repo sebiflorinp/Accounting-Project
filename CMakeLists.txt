@@ -10,4 +10,6 @@ add_executable(cp2 main.c
         libs/models/models.h
         libs/dbInteraction/users/users.c
         libs/dbInteraction/accounts/accounts.h
-        libs/dbInteraction/accounts/accounts.c)
+        libs/dbInteraction/accounts/accounts.c
+        libs/transactions/transactions.h
+        libs/transactions/transaction.c)
