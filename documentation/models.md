@@ -34,3 +34,13 @@
 |:---------:|:---------:|
 |    ID     |    Int    |
 | Activity  |  String   |
+
+## Account
+
+| Data name | Data type |
+|:---------:|:---------:|
+|    ID     |    Int    |
+| Owner ID  |    Int    |
+|   Name    |  String   |
+|   Type    |  String   |
+|  Balance  |   Float   |

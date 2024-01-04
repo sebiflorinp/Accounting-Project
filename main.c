@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include "libs/dbInteraction/users/users.h"
+#include "libs/dbInteraction/accounts/accounts.h"
 
 int main() {
-    char username[100] = "aaaa";
-    char password[100] = "fsdfdf";
-    printf("%b",logInUser(username, password));
+    deleteAccount(1, 1);
     return 0;
 }

@@ -19,6 +19,15 @@
         int year;
     } Transaction;
 
+    // Account model
+    typedef struct {
+        int accountId;
+        int ownerId;
+        char name[200];
+        float balance;
+        char type[200];
+    } Account;
+
     // important user model
     typedef struct {
         int id;

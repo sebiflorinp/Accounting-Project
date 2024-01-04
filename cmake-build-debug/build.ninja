@@ -67,6 +67,12 @@ build CMakeFiles/cp2.dir/libs/dbInteraction/users/users.c.o: C_COMPILER__cp2_uns
   OBJECT_DIR = CMakeFiles/cp2.dir
   OBJECT_FILE_DIR = CMakeFiles/cp2.dir/libs/dbInteraction/users
 
+build CMakeFiles/cp2.dir/libs/dbInteraction/accounts/accounts.c.o: C_COMPILER__cp2_unscanned_Debug /home/sebifp/devStuff/repos/cp2/libs/dbInteraction/accounts/accounts.c || cmake_object_order_depends_target_cp2
+  DEP_FILE = CMakeFiles/cp2.dir/libs/dbInteraction/accounts/accounts.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/cp2.dir
+  OBJECT_FILE_DIR = CMakeFiles/cp2.dir/libs/dbInteraction/accounts
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target cp2
@@ -75,7 +81,7 @@ build CMakeFiles/cp2.dir/libs/dbInteraction/users/users.c.o: C_COMPILER__cp2_uns
 #############################################
 # Link the executable cp2
 
-build cp2: C_EXECUTABLE_LINKER__cp2_Debug CMakeFiles/cp2.dir/main.c.o CMakeFiles/cp2.dir/libs/validation/validation.c.o CMakeFiles/cp2.dir/libs/dbInteraction/users/users.c.o
+build cp2: C_EXECUTABLE_LINKER__cp2_Debug CMakeFiles/cp2.dir/main.c.o CMakeFiles/cp2.dir/libs/validation/validation.c.o CMakeFiles/cp2.dir/libs/dbInteraction/users/users.c.o CMakeFiles/cp2.dir/libs/dbInteraction/accounts/accounts.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/cp2.dir
   POST_BUILD = :

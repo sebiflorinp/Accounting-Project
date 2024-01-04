@@ -8,4 +8,6 @@ add_executable(cp2 main.c
         libs/validation/validation.c
         libs/dbInteraction/users/users.h
         libs/models/models.h
-        libs/dbInteraction/users/users.c)
+        libs/dbInteraction/users/users.c
+        libs/dbInteraction/accounts/accounts.h
+        libs/dbInteraction/accounts/accounts.c)
