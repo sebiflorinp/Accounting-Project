@@ -1,5 +1,5 @@
 #include "accounts.h"
-#include "../../models/models.h"
+#include "../models/models.h"
 #include <stdbool.h>
 #include <stdio.h>
 #include <string.h>
