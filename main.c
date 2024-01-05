@@ -4,8 +4,8 @@
 #include "libs/transactions/transactions.h"
 #include "libs/reports/reports.h"
 #include <time.h>
+#include "libs/importantUsers/importantUsers.h"
 
 int main() {
-    balances(2);
     return 0;
 }

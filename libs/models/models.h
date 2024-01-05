@@ -32,9 +32,10 @@
     typedef struct {
         int id;
         // id of the user to whom is another user important
-        int idUser1;
+        int currentUserId;
         // id of the user who is important
-        int idUser2;
-        char description[1000];
+        int importantUserId;
+        char importantUserName[2000];
+        char description[2000];
     } ImportantUser;
 #endif //CP2_MODELS_H

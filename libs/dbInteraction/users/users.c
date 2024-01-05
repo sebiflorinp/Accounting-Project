@@ -13,9 +13,6 @@ bool createUser(char* username, char* password) {
     // open db
     FILE *usersDB;
     usersDB = fopen("../db/users.txt", "r");
-    if (usersDB == NULL) {
-        return false;
-    }
     // declare id, username and password for data from the db
     int idDB;
     char usernameDB[200], passwordDB[200];

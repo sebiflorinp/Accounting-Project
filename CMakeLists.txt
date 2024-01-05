@@ -14,4 +14,6 @@ add_executable(cp2 main.c
         libs/transactions/transactions.h
         libs/transactions/transactions.c
         libs/reports/reports.h
-        libs/reports/reports.c)
+        libs/reports/reports.c
+        libs/importantUsers/importantUsers.c
+        libs/importantUsers/importantUsers.h)
