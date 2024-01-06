@@ -6,5 +6,5 @@
     bool createUser(char* username, char* password);
 
     // Log in function
-    bool logInUser(char *username, char* password);
+    int logInUser(char *username, char* password);
 #endif //CP2_USERS_H

@@ -31,7 +31,7 @@ bool createUser(char* username, char* password) {
     return true;
 }
 
-bool logInUser(char *username, char* password) {
+int logInUser(char *username, char* password) {
 
     // open db
     FILE *usersDB;
@@ -43,9 +43,9 @@ bool logInUser(char *username, char* password) {
     while (fscanf(usersDB, "%d %s %s", &idDB, usernameDB, passwordDB) == 3) {
         if (strcmp(username, usernameDB) == 0)
             if (strcmp(password, passwordDB) == 0)
-                return true;
+                return idDB;
     }
     fclose(usersDB);
     //return false if the passwords do not match or if there isn't any user with the input username
-    return false;
+    return 0;
 }

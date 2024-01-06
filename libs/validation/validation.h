@@ -5,6 +5,10 @@
     // id validator
     bool validateId(char* id);
 
+    // action validator
+    bool validateActionLoginMenu(char* action);
+    bool validateActionMenu(char* action);
+
     // username validator
     bool validateUsername(char* username);
 

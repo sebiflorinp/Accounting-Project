@@ -1,6 +1,7 @@
 #include "validation.h"
 #include <stdbool.h>
 #include <string.h>
+#include <stdlib.h>
 
 bool validateId(char* id) {
     /*
@@ -15,6 +16,43 @@ bool validateId(char* id) {
     // If the id is made only of numbers return true
     return true;
 }
+
+bool validateActionLoginMenu(char* action) {
+    /*
+     * A function that checks if the received action is valid.
+     * Preconditions: action: a char array
+     * Post-conditions: a bool
+     */
+    // Check if the action is only made of numbers
+    for (int index = 0; index < strlen(action); index++)
+        if (!('0' <= action[index] && action[index] <= '9'))
+            return false;
+    // Check if action if between 1 and 3
+    if (!(1 <= atoi(action) && atoi(action) <= 3))
+        return false;
+    // If the id is made only of numbers return true
+    return true;
+
+}
+
+bool validateActionMenu(char* action) {
+    /*
+     * A function that checks if the received action is valid.
+     * Preconditions: action: a char array
+     * Post-conditions: a bool
+     */
+    // Check if the action is only made of numbers
+    for (int index = 0; index < strlen(action); index++)
+        if (!('0' <= action[index] && action[index] <= '9'))
+            return false;
+    // Check if action if between 1 and 20
+    if (!(1 <= atoi(action) && atoi(action) <= 20))
+        return false;
+    // If the id is made only of numbers return true
+    return true;
+
+}
+
 
 bool validateUsername(char* username) {
     /*
