@@ -2,6 +2,7 @@
 #include <stdbool.h>
 #include <string.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 bool validateId(char* id) {
     /*
@@ -15,6 +16,29 @@ bool validateId(char* id) {
             return false;
     // If the id is made only of numbers return true
     return true;
+}
+
+bool validateAccountId(int userId, int accountId) {
+    /*
+     * A function that checks if the account with the received id is owned by the user with the received id.
+     * Preconditions: userId: an int
+     *                accountId: an int
+     * Preconditions: a bool
+     */
+    // open the db
+    FILE *accountsDB = fopen("../db/accounts.txt", "r");
+    int ownerIdDB, accountIdDB;
+    float balanceDB;
+    char nameDB[100], typeDB[100];
+    // go throw accounts and find if there is an account that has the received ids
+    while (fscanf(accountsDB, "%d %d %s %f %s", &accountIdDB, &ownerIdDB, nameDB, &balanceDB, typeDB) == 5) {
+        if (accountIdDB == accountId && ownerIdDB == userId)
+            return true;
+    }
+    // close db
+    fclose(accountsDB);
+    // return false if there was no account that has the received ids
+    return false;
 }
 
 bool validateActionLoginMenu(char* action) {
@@ -96,7 +120,7 @@ bool validateValue(char* value) {
      */
     // Check if the value contains only numbers and '.' which is used for floats
     for (int index = 0; index < strlen(value); index++)
-        if (!('0' <= value[index] && value[index] <= '9') || value[index] == '.')
+        if (!(('0' <= value[index] && value[index] <= '9') || value[index] == '.'))
             return false;
     // If the value is made only of numbers and '.' return true
     return true;
@@ -112,9 +136,24 @@ bool validateType(char* type) {
     if (strlen(type) != 1)
         return false;
     // Check if the type is 1, 2 or 3, if it isn't return false
-    if (type[0] != '1' && type[1] != '2' && type[2] != '3')
+    if (type[0] != '1' && type[0] != '2' && type[0] != '3')
         return false;
     // If the type is 1, 2 or 3 return true
+    return true;
+}
+
+bool validateConfirmation(char* confirmation) {
+    /*
+     * A function that check if the received confirmation is valid.
+     * Preconditions: confirmation: a string
+     * Post-conditions: a bool
+     */
+    // check if the confirmation is 1 character long
+    if (strlen(confirmation) != 1)
+        return false;
+    // check if the confirmation is y or n
+    if (confirmation[0] != 'y' && confirmation[0] != 'n')
+        return false;
     return true;
 }
 

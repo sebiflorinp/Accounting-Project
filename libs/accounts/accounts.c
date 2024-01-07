@@ -51,6 +51,9 @@ bool editAccount(int ownerId, int accountId, char* newName, char* newType) {
     int count = 0;
     bool found = false;
     while (fscanf(accountsDB, "%d %d %s %f %s", &accountIdDB, &ownerIdDB, nameDB, &balanceDB, typeDB) == 5) {
+        // if another account already has the name of the updated account return false
+        if (strcmp(nameDB, newName) == 0)
+            return 0;
         if (ownerId == ownerIdDB && accountId == accountIdDB) {
             accounts[count].accountId = accountIdDB;
             accounts[count].ownerId = ownerIdDB;
@@ -73,7 +76,7 @@ bool editAccount(int ownerId, int accountId, char* newName, char* newType) {
     fclose(accountsDB);
     // store the new data in the db
     accountsDB = fopen("../db/accounts.txt", "w");
-    for (int index = 0; index <= count; index++)
+    for (int index = 0; index < count; index++)
         fprintf(accountsDB, "%d %d %s %f %s\n", accounts[index].accountId, accounts[index].ownerId, accounts[index].name,
                 accounts[index].balance, accounts[index].type);
     fclose(accountsDB);
@@ -120,4 +123,65 @@ bool deleteAccount(int ownerId, int accountId) {
                 accounts[index].balance, accounts[index].type);
     fclose(accountsDB);
     return true;
+}
+
+bool displayAccounts(int ownerId) {
+    // open db
+    FILE *accountsDB = fopen("../db/accounts.txt", "r");
+    int ownerIdDB, accountIdDB;
+    float balanceDB;
+    char nameDB[100], typeDB[100];
+    // Display the accounts
+    while (fscanf(accountsDB, "%d %d %s %f %s", &accountIdDB, &ownerIdDB, nameDB, &balanceDB, typeDB) == 5) {
+        if (ownerIdDB == ownerId)
+            printf("%d %s %f %s\n", accountIdDB, nameDB, balanceDB, typeDB);
+    }
+    // close db
+    fclose(accountsDB);
+}
+
+int returnNumberOfAccounts(int ownerId) {
+    /*
+     * A function that returns the number of accounts owned by the user with the received id.
+     * Preconditions: ownerId: an int
+     * Post-conditions: an int
+     */
+    // open db
+    FILE *accountsDB = fopen("../db/accounts.txt", "r");
+    int ownerIdDB, accountIdDB;
+    float balanceDB;
+    char nameDB[100], typeDB[100];
+    int count = 0;
+    // Count the accounts
+    while (fscanf(accountsDB, "%d %d %s %f %s", &accountIdDB, &ownerIdDB, nameDB, &balanceDB, typeDB) == 5) {
+        if (ownerId == ownerIdDB)
+            count++;
+    }
+    // close db
+    fclose(accountsDB);
+    // return the number of accounts
+    return count;
+}
+
+bool checkIfAccountExists(int id) {
+    /*
+     * A function that checks if an account with the received id exists.
+     * Preconditions: id: an int
+     * Post-conditions: a bool
+     */
+    // open db
+    FILE *accountsDB = fopen("../db/accounts.txt", "r");
+    int ownerIdDB, accountIdDB;
+    float balanceDB;
+    char nameDB[100], typeDB[100];
+    // go through the accounts
+    while (fscanf(accountsDB, "%d %d %s %f %s", &accountIdDB, &ownerIdDB, nameDB, &balanceDB, typeDB) == 5) {
+        // return true if the account was found
+        if (accountIdDB == id)
+            return true;
+    }
+    // close db
+    fclose(accountsDB);
+    // return false if no account was found.
+    return false;
 }

@@ -5,6 +5,9 @@
     // id validator
     bool validateId(char* id);
 
+    // validate account id
+    bool validateAccountId(int userId, int accountId);
+
     // action validator
     bool validateActionLoginMenu(char* action);
     bool validateActionMenu(char* action);
@@ -20,4 +23,7 @@
 
     // type validator
     bool validateType(char* type);
+
+    // confirmation validator
+    bool validateConfirmation(char* confirmation);
 #endif //CP2_VALIDATION_H

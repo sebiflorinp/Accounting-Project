@@ -1,3 +1,9 @@
 1 1 SavingAccount 30.000000 Savings
 2 1 CreditAccount 0.000000 Credits
 3 2 SavingsAccount 140.000000 Savings
+4 3 ASSSSS 0.000000 1
+5 3 ASSSSSS 0.000000 1
+6 3 AAAA 0.000000 1
+7 3 WERT 0.000000 1
+8 3 XXXX 0.000000 2
+10 4 bbbb 7.455660 3
