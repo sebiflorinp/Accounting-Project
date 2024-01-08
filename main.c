@@ -74,9 +74,10 @@ int main() {
                         loggedInUser = logInUser(username, password);
                         if (loggedInUser == 0)
                             printf("The username or the password were wrong!\n");
-                        else
+                        else {
                             loggedIn = true;
                             printf("You have logged in successfully.\n");
+                        }
                         break;
                         // exit option
                     case 3:
@@ -347,7 +348,7 @@ int main() {
                                     printf("The input account id is invalid, please input a valid one.\n");
                                 else {
                                     // if the account id does not belong to any account display a special message
-                                    validAccountIdToTransfer = checkIfAccountExists(accountIdToTransferTo);
+                                    validAccountIdToTransfer = checkIfAccountExists(atoi(accountIdToTransferTo));
                                     if (!validAccountIdToTransfer)
                                         printf("The input id does not belong the any account, you need to input "
                                                "an id that belongs to an account.\n");
@@ -362,7 +363,7 @@ int main() {
                                     printf("The input value is not valid, please input a valid one.\n");
                             }
                             // get confirmation
-                            printf("Do you want to transfer %d from to which is owned by %d? (y/n)\n",
+                            printf("Do you want to transfer %f to the account with the id of %d? (y/n)\n",
                                    atof(value), atoi(accountIdToTransferTo));
                             while (!validConfirmation) {
                                 scanf("%s", confirmation);
@@ -371,9 +372,9 @@ int main() {
                                     printf("The input confirmation is not valid, please input a valid one.\n");
                             }
                             // transfer the money and notify the user depending on the results
-                            if (strcmp(confirmation, "y"))
+                            if (strcmp(confirmation, "y") == 0)
                                 if (transfer(loggedInUser, atoi(accountId), atoi(accountIdToTransferTo), atof(value)))
-                                    printf("The transfer was successful!");
+                                    printf("The transfer was successful!\n");
                                 else
                                     printf("You cannot transfer money to the same account.\n");
                             else

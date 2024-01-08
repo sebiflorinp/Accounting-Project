@@ -16,18 +16,19 @@ bool createAccount(int ownerID, char* name, char* type) {
     int ownerIdDB, accountIdDB;
     float balanceDB;
     char nameDB[100], typeDB[100];
-    int accounts = 1;
+    int maxAccountId = 0;
     // Checks if the user already has an account with the same name as the received one
     while (fscanf(accountsDB, "%d %d %s %f %s", &accountIdDB, &ownerIdDB, nameDB, &balanceDB, typeDB) == 5) {
         if (ownerID == ownerIdDB && strcmp(name, nameDB) == 0)
             return false;
-        accounts++;
+        if (maxAccountId < accountIdDB)
+            maxAccountId = accountIdDB;
     }
     fclose(accountsDB);
     // Add the account if the user doesn't have one with the same name
     accountsDB = fopen("../db/accounts.txt", "a");
     // Add the account
-    fprintf(accountsDB, "%d %d %s %f %s\n", accounts, ownerID, name, 0.0, type);
+    fprintf(accountsDB, "%d %d %s %f %s\n", maxAccountId + 1, ownerID, name, 0.0, type);
     fclose(accountsDB);
     return true;
 }
