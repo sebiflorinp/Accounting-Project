@@ -26,4 +26,7 @@
 
     // confirmation validator
     bool validateConfirmation(char* confirmation);
+
+    // validate the description of an important user
+    bool validateDescription(char *description);
 #endif //CP2_VALIDATION_H

@@ -19,9 +19,10 @@ bool addUser(int currentUserId, int importantUserId, char description[]) {
     FILE* importantUsersDB = fopen("../db/importantUsers.txt", "r");
     int idDB, currentUserIdDB, importantUserIdDB;
     char importantUserNameDB[2000], descriptionDB[2000];
-    int count = 1;
+    int maxId = 0;
     while (fscanf(importantUsersDB, "%d %d %d %s %s", &idDB, &currentUserIdDB, &importantUserIdDB, importantUserNameDB, descriptionDB) == 5) {
-        count++;
+        if (maxId < importantUserIdDB)
+            maxId = importantUserIdDB;
         // if that important user is already in the db return false
         if (currentUserIdDB == currentUserId && importantUserId == importantUserIdDB)
             return false;
@@ -51,7 +52,7 @@ bool addUser(int currentUserId, int importantUserId, char description[]) {
     }
     // add the new entry in the db
     importantUsersDB = fopen("../db/importantUsers.txt", "a");
-    fprintf(importantUsersDB, "%d %d %d %s %s\n", count, currentUserId, importantUserId, importantUserName, parsedDescription);
+    fprintf(importantUsersDB, "%d %d %d %s %s\n", maxId + 1, currentUserId, importantUserId, importantUserName, parsedDescription);
     fclose(importantUsersDB);
     return true;
 }
@@ -180,4 +181,47 @@ void displayImportantUsers(int currentUserId) {
     fclose(importantUsersDB);
     if (count == 0)
         printf("There are no important users.\n");
+}
+
+bool checkImportantUser(int userId, int importantUserId) {
+    /*
+     * A function that checks if an user has another user as an important user
+     * Preconditions: userId: an int
+     *                importantUser: an int
+     * Post-conditions: a bool
+     */
+    // open db
+    FILE *importantUsersDB = fopen("../db/importantUsers.txt", "r");
+    int idDB, currentUserIdDB, importantUserIdDB;
+    char usernameDB[2000], descriptionDB[2000];
+    // check if the ids match
+    while (fscanf(importantUsersDB, "%d %d %d %s %s", &idDB, &currentUserIdDB, &importantUserIdDB, usernameDB, descriptionDB) == 5)
+        if (currentUserIdDB == userId && importantUserIdDB == importantUserId)
+            return true;
+    fclose(importantUsersDB);
+    // return false if the ids didn't match
+    return false;
+}
+
+
+bool checkIfUserHasImportantUsers(int userId) {
+    /*
+     * A function that checks if a certain user has any important users
+     * Preconditions: userId: an int
+     * Post-conditions: a bool
+     */
+    // open db
+    FILE *importantUsersDB = fopen("../db/importantUsers.txt", "r");
+    int idDB, currentUserIdDB, importantUserIdDB;
+    char usernameDB[2000], descriptionDB[2000];
+    int count = 0;
+    // count the users
+    while (fscanf(importantUsersDB, "%d %d %d %s %s", &idDB, &currentUserIdDB, &importantUserIdDB, usernameDB, descriptionDB) == 5)
+        if (currentUserIdDB == userId)
+            count++;
+    fclose(importantUsersDB);
+    if (count == 0)
+        return false;
+    else
+        return true;
 }

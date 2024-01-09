@@ -92,19 +92,21 @@ int main() {
 
         }
         // print instructions
-        printf("In this application you can manage different financial accounts.\n");
-        printf("In order to interact with this application you need to choose one of the following commands:"
-               "\n  1. Create financial account.\n  2. Edit financial account.\n  3. Delete financial account.\n"
-               "  4. Deposit money.\n  5. Withdraw money.\n  6. Transfer money.\n  7. Male a payment.\n  8. "
-               "Print statements of an account.\n  9. Print balances.\n  10. Print transactions of an account.\n"
-               "  11. Print the expenses of an account.\n  12. Add user to the list of important users.\n"
-               "  13. Update an important user.\n  14. Delete an important user.\n  15. Display important users.\n");
+        if (running) {
+            printf("In this application you can manage different financial accounts.\n");
+            printf("In order to interact with this application you need to choose one of the following commands:"
+                    "\n  1. Create financial account.\n  2. Edit financial account.\n  3. Delete financial account.\n"
+                    "  4. Deposit money.\n  5. Withdraw money.\n  6. Transfer money.\n  7. Male a payment.\n  8. "
+                    "Print statements of an account.\n  9. Print balances.\n  10. Print transactions of an account.\n"
+                    "  11. Print the expenses of an account.\n  12. Add user to the list of important users.\n"
+                    "  13. Update an important user.\n  14. Delete an important user.\n  15. Display important users.\n  16. Log out.\n");
+        }
         // application menu loop
         while (loggedIn && running) {
             // needed variables
-            char accountName[2000], accountType[200], accountId[200], confirmation[200], value[200], accountIdToTransferTo[2000];
-            bool validAccountName = false, validAccountType = false, validValue = false;
-            bool validAccountId = false, validConfirmation = false, validAccountIdToTransfer = false;
+            char accountName[2000], accountType[200], accountId[200], confirmation[200], value[200], accountIdToTransferTo[2000], userId[200], description[2000], importantUsername[2000];
+            bool validAccountName = false, validAccountType = false, validValue = false, validDescription = false, validImportantUsername = false;
+            bool validAccountId = false, validConfirmation = false, validAccountIdToTransfer = false, validUserId = false;
             printf("Select an action:\n");
             scanf("%s", action);
 
@@ -380,6 +382,252 @@ int main() {
                             else
                                 printf("The transfer was cancelled.\n");
                         }
+                        break;
+                    //make a payment feature
+                    case 7:
+                        // if the user does not have any account display a special message
+                        if (returnNumberOfAccounts(loggedInUser) == 0)
+                            printf("In order to withdraw money from an account you need to create one, please "
+                                   "create one before trying to withdraw money from it.\n");
+                        else {
+                            // prepare variables for input loops
+                            validAccountId = false;
+                            validValue = false;
+                            printf("Input the id of the account from which the payment will be made.\n");
+                            displayAccounts(loggedInUser);
+                            // choosing an account loop
+                            while (!validAccountId) {
+                                scanf("%s", accountId);
+                                // if the id is invalid (as in it is not a valid integer) display a special message
+                                if (!validateId(accountId))
+                                    printf("The input account id is invalid, please input a valid one.\n");
+                                else {
+                                    // if the account id was not chosen from the displayed list print a message
+                                    validAccountId = validateAccountId(loggedInUser, atoi(accountId));
+                                    if (!validAccountId)
+                                        printf("You do not own the account with the input id, please input the"
+                                               "id of an account from the list.\n");
+                                }
+                            }
+                            // getting a valid value loop
+                            printf("Input the amount of money that will be withdrawn\n");
+                            while (!validValue) {
+                                scanf("%s", value);
+                                validValue = validateValue(value);
+                                if (!validValue)
+                                    printf("The input value is not valid, please input a valid one.\n");
+                            }
+                            // make the payment and notify the user
+                            if (payment(loggedInUser, atoi(accountId), atof(value)))
+                                printf("The withdrawal was made successfully!\n");
+                            else
+                                printf("The payment was unsuccessful, you can not pay more money then are"
+                                       " in the account.\n");
+                        }
+                        break;
+                    // display statements
+                    case 8:
+                        validAccountId = false;
+                        printf("Input the id of the account:\n");
+                        displayAccounts(loggedInUser);
+                        // choosing an account to display the statements of
+                        while (!validAccountId) {
+                            scanf("%s", accountId);
+                            // if the id is invalid (as in it is not a valid integer) display a special message
+                            if (!validateId(accountId))
+                                printf("The input account id is invalid, please input a valid one.\n");
+                            else {
+                                // if the account id was not chosen from the displayed list print a message
+                                validAccountId = validateAccountId(loggedInUser, atoi(accountId));
+                                if (!validAccountId)
+                                    printf("You do not own the account with the input id, please input the"
+                                           "id of an account from the list.\n");
+                            }
+                        }
+                        // print all statements
+                        printf("Statements:\n");
+                        statements(atoi(accountId));
+                        break;
+                    // print balances feature
+                    case 9:
+                        // print balances
+                        printf("Balances:\n");
+                        balances(loggedInUser);
+                        break;
+                    // display transactions
+                    case 10:
+                        validAccountId = false;
+                        printf("Input the id of the account:\n");
+                        displayAccounts(loggedInUser);
+                        // choosing an account to display the transactions of
+                        while (!validAccountId) {
+                            scanf("%s", accountId);
+                            // if the id is invalid (as in it is not a valid integer) display a special message
+                            if (!validateId(accountId))
+                                printf("The input account id is invalid, please input a valid one.\n");
+                            else {
+                                // if the account id was not chosen from the displayed list print a message
+                                validAccountId = validateAccountId(loggedInUser, atoi(accountId));
+                                if (!validAccountId)
+                                    printf("You do not own the account with the input id, please input the"
+                                           "id of an account from the list.\n");
+                            }
+                        }
+                        // displaying the transactions
+                        transactions(atoi(accountId));
+                        break;
+                    //display the expenses of an account
+                    case 11:
+                        validAccountId = false;
+                        printf("Input the id of the account:\n");
+                        displayAccounts(loggedInUser);
+                        // choosing an account to display the transactions of
+                        while (!validAccountId) {
+                            scanf("%s", accountId);
+                            // if the id is invalid (as in it is not a valid integer) display a special message
+                            if (!validateId(accountId))
+                                printf("The input account id is invalid, please input a valid one.\n");
+                            else {
+                                // if the account id was not chosen from the displayed list print a message
+                                validAccountId = validateAccountId(loggedInUser, atoi(accountId));
+                                if (!validAccountId)
+                                    printf("You do not own the account with the input id, please input the"
+                                           "id of an account from the list.\n");
+                            }
+                        }
+                        // displaying the expenses
+                        expenses(atoi(accountId));
+                        break;
+                    // adding important user
+                    case 12:
+                         validUserId = false;
+                         validDescription = false;
+                         printf("Input the id of the important user.\n");
+                         // get user id
+                         while (!validUserId) {
+                             scanf("%s", userId);
+                             // if the id is invalid (as in it is not a valid integer) display a special message
+                             if (!validateId(userId))
+                                 printf("The input account id is invalid, please input a valid one.\n");
+                             else {
+                                 // if the user id does not exist display a message
+                                 validUserId = checkIfUserExists(atoi(userId));
+                                 if (!validUserId)
+                                     printf("The input id does not belong to any user, please input an id that belongs to an user.\n");
+                                 // if the id of the user that is logged in is input display a message
+                                 if (atoi(userId) == loggedInUser) {
+                                     printf("The input id belongs to your account, please input another id.\n");
+                                     validUserId = false;
+                                 }
+                             }
+                         }
+                         // get description
+                         printf("");
+                         printf("Input a description for the important user.\n");
+                         while (!validDescription) {
+                             getchar();
+                             fgets(description, 2000, stdin);
+                             description[strlen(description) - 1] = 0;
+                             validDescription = validateDescription(description);
+                             if (!validDescription)
+                                 printf("The input description is not valid, please input a valid one.\n");
+                         }
+                         // add important user
+                         if (addUser(loggedInUser, atoi(userId), description))
+                             printf("The user was added successfully in the list of important users!\n");
+                         else
+                             printf("The chosen user is already in the list of important users.\n");
+                         break;
+                    // edit important user
+                    case 13:
+                        // if the logged in user doesn't have any important users return a message
+                        if (!checkIfUserHasImportantUsers(loggedInUser))
+                            printf("In order to edit an important user you need to add one, please add one before"
+                                   " trying to edit it.\n");
+                        else {
+                            // prepare variables for input loops
+                            validUserId = false;
+                            validDescription = false;
+                            printf("Input the id of the important user that will be edited:\n");
+                            displayImportantUsers(loggedInUser);
+                            // choosing a user loop
+                            while (!validUserId) {
+                                scanf("%s", userId);
+                                // if the id is invalid (as in it is not a valid integer) display a special message
+                                if (!validateId(userId))
+                                    printf("The input user id is invalid, please input a valid one.\n");
+                                else {
+                                    // if the user id was not chosen from the displayed list print a message
+                                    validUserId = checkImportantUser(loggedInUser, atoi(userId));
+                                    if (!validUserId)
+                                        printf("You do not have the user with the input id as an important user,"
+                                               " please input the id of another important user.\n");
+                                }
+                            }
+                            printf("Input the new description of the important user.\n");
+                            // choosing new description loop
+                            while (!validDescription) {
+                                getchar();
+                                fgets(description, 2000, stdin);
+                                description[strlen(description) - 1] = 0;
+                                validDescription= validateDescription(description);
+                                if (!validDescription)
+                                    printf("The input description is invalid, please input another one.\n");
+                            }
+                            editUser(loggedInUser, validUserId, description);
+                            printf("The user was updated successfully!\n");
+                        }
+                        break;
+                    // delete important user
+                    case 14:
+                        if (!checkIfUserHasImportantUsers(loggedInUser))
+                            printf("In order to delete an important user you need to add one, please add one before"
+                                   " trying to delete it.\n");
+                        else {
+                            // prepare variables for input loops
+                            validUserId = false;
+                            validConfirmation = false;
+                            printf("Input the id of the important user that will be deleted:\n");
+                            displayImportantUsers(loggedInUser);
+                            // choosing an account loop
+                            while (!validUserId) {
+                                scanf("%s", userId);
+                                // if the id is invalid (as in it is not a valid integer) display a special message
+                                if (!validateId(userId))
+                                    printf("The input user id is invalid, please input a valid one.\n");
+                                else {
+                                    // if the account id was not chosen from the displayed list print a message
+                                    validUserId = checkImportantUser(loggedInUser, atoi(userId));
+                                    if (!validUserId)
+                                        printf("You do not have the user with the input id as an important user,"
+                                               " please input the id of another important user.\n");
+                                }
+                            }
+                            // ask for confirmation before deleting the important user
+                            printf("Do you want to delete the selected important user? (y/n)\n");
+                            while (!validConfirmation) {
+                                scanf("%s", confirmation);
+                                validConfirmation = validateConfirmation(confirmation);
+                                if (!validConfirmation)
+                                    printf("The input confirmation is not valid, please input a valid one.\n");
+                            }
+                            // display a message depending on the confirmation
+                            if (strcmp(confirmation, "y") == 0) {
+                                deleteUser(loggedInUser, atoi(userId));
+                                printf("The user was deleted successfully from the list of important users.\n");
+                            }
+                            else
+                                printf("The important user with the input id was not deleted.\n");
+                        }
+                        break;
+                    // display important users
+                    case 15:
+                        displayImportantUsers(loggedInUser);
+                        break;
+                    // log out
+                    case 16:
+                        loggedInUser = 0;
+                        loggedIn = false;
                         break;
                 }
             } else {

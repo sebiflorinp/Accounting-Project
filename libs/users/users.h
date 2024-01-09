@@ -7,4 +7,7 @@
 
     // Log in function
     int logInUser(char *username, char* password);
+
+    // check if user exists
+    bool checkIfUserExists(int id);
 #endif //CP2_USERS_H

@@ -14,4 +14,10 @@
 
     // a function that prints all important users of a certain user
     void displayImportantUsers(int currentUserId);
+
+    // a function that checks if a certain user has another user as an important user
+    bool checkImportantUser(int userId, int importantUserId);
+
+    // a function that checks if a certain user has any important users
+    bool checkIfUserHasImportantUsers(int userId);
 #endif //CP2_IMPORTANTUSERS_H

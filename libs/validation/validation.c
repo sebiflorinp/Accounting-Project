@@ -157,3 +157,19 @@ bool validateConfirmation(char* confirmation) {
     return true;
 }
 
+bool validateDescription(char *description) {
+    /*
+     * A function that checks if the received description is valid.
+     * Preconditions: description: a char array
+     * Post-conditions: a bool
+     */
+    // check if the description is at least 4 characters long
+    if (strlen(description) < 4)
+        return false;
+    // check if the description contains only numbers, letters and spaces
+    for (int index = 0; index < strlen(description); index++)
+        if (!(('0' <= description[index] && description[index] <= '9') || ('a' <= description[index] && description[index] <='z') || ('A' <=description[index] && description[index] <='Z') || description[index] == ' '))
+            return false;
+    return true;
+}
+

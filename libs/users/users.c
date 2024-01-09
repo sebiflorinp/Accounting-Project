@@ -32,7 +32,12 @@ bool createUser(char* username, char* password) {
 }
 
 int logInUser(char *username, char* password) {
-
+    /*
+     * A function that checks if the username and password are correct and returns a result
+     * Preconditions: username: a char array
+     *                password: a char array
+     * Post-conditions: an integer
+     */
     // open db
     FILE *usersDB;
     usersDB = fopen("../db/users.txt", "r");
@@ -48,4 +53,25 @@ int logInUser(char *username, char* password) {
     fclose(usersDB);
     //return false if the passwords do not match or if there isn't any user with the input username
     return 0;
+}
+
+bool checkIfUserExists(int id) {
+    /*
+     * A function that checks if the user with the input id exists in the db
+     * Preconditions: id: an integer
+     * Post-conditions: a bool
+     */
+    // open db
+    FILE *usersDB;
+    usersDB = fopen("../db/users.txt", "r");
+    // declare id, username and password for data from the db
+    int idDB;
+    char usernameDB[200], passwordDB[200];
+    // return true if a user with the received id is read from the db
+    while (fscanf(usersDB, "%d %s %s", &idDB, usernameDB, passwordDB) == 3) {
+        if (idDB == id)
+            return true;
+    }
+    // return false if the user wasn't found
+    return false;
 }
