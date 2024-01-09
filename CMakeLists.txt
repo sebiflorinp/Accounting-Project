@@ -16,4 +16,8 @@ add_executable(cp2 main.c
         libs/reports/reports.h
         libs/reports/reports.c
         libs/importantUsers/importantUsers.c
-        libs/importantUsers/importantUsers.h)
+        libs/importantUsers/importantUsers.h
+        libs/activityLog/activityLog.h
+        libs/activityLog/activityLog.c
+        libs/misc/misc.c
+        libs/misc/misc.h)

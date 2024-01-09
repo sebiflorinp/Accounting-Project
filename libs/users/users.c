@@ -2,6 +2,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <string.h>
+#include "../../libs/activityLog/activityLog.h"
 
 bool createUser(char* username, char* password) {
     /*
@@ -28,6 +29,9 @@ bool createUser(char* username, char* password) {
     usersDB = fopen("../db/users.txt", "a");
     fprintf(usersDB,"%d %s %s\n", counter, username, password);
     fclose(usersDB);
+    char formattedString[1000];
+    sprintf(formattedString, "The user with the id of %d the username %s and password %s was created.", counter, username, password);
+    addActivity(formattedString);
     return true;
 }
 
@@ -47,12 +51,27 @@ int logInUser(char *username, char* password) {
     // check if there is any user with the same username as the input one and then check the passwords, if they match return true
     while (fscanf(usersDB, "%d %s %s", &idDB, usernameDB, passwordDB) == 3) {
         if (strcmp(username, usernameDB) == 0)
-            if (strcmp(password, passwordDB) == 0)
+            if (strcmp(password, passwordDB) == 0) {
+                char formatedString[1000];
+                sprintf(formatedString, "The user with the id of %d logged in.", idDB);
+                addActivity(formatedString);
                 return idDB;
+            }
     }
     fclose(usersDB);
     //return false if the passwords do not match or if there isn't any user with the input username
     return 0;
+}
+
+void logOutUser(int loggedInUserId) {
+    /*
+     * A function that logs out the user (mostly used for the activity log)
+     * Preconditions: loggedInUserId: an int
+     * Post-conditions: -
+     */
+    char formatedString[1000];
+    sprintf(formatedString, "The user with the id of %d logged out.", loggedInUserId);
+    addActivity(formatedString);
 }
 
 bool checkIfUserExists(int id) {

@@ -9,6 +9,7 @@
 #include "libs/importantUsers/importantUsers.h"
 #include <stdbool.h>
 #include <stdlib.h>
+#include "libs/activityLog/activityLog.h"
 
 int main() {
     // global variables
@@ -96,7 +97,7 @@ int main() {
             printf("In this application you can manage different financial accounts.\n");
             printf("In order to interact with this application you need to choose one of the following commands:"
                     "\n  1. Create financial account.\n  2. Edit financial account.\n  3. Delete financial account.\n"
-                    "  4. Deposit money.\n  5. Withdraw money.\n  6. Transfer money.\n  7. Male a payment.\n  8. "
+                    "  4. Deposit money.\n  5. Withdraw money.\n  6. Transfer money.\n  7. Make a payment.\n  8. "
                     "Print statements of an account.\n  9. Print balances.\n  10. Print transactions of an account.\n"
                     "  11. Print the expenses of an account.\n  12. Add user to the list of important users.\n"
                     "  13. Update an important user.\n  14. Delete an important user.\n  15. Display important users.\n  16. Log out.\n");
@@ -626,6 +627,7 @@ int main() {
                         break;
                     // log out
                     case 16:
+                        logOutUser(loggedInUser);
                         loggedInUser = 0;
                         loggedIn = false;
                         break;

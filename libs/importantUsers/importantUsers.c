@@ -2,6 +2,7 @@
 #include <string.h>
 #include "importantUsers.h"
 #include "../models/models.h"
+#include "../activityLog/activityLog.h"
 
 bool addUser(int currentUserId, int importantUserId, char description[]) {
     /*
@@ -54,6 +55,9 @@ bool addUser(int currentUserId, int importantUserId, char description[]) {
     importantUsersDB = fopen("../db/importantUsers.txt", "a");
     fprintf(importantUsersDB, "%d %d %d %s %s\n", maxId + 1, currentUserId, importantUserId, importantUserName, parsedDescription);
     fclose(importantUsersDB);
+    char formattedString[1000];
+    sprintf(formattedString, "The user with the id of %d added the user with the id of %d on the list of important users with the description of %s.", currentUserId, importantUserId, description);
+    addActivity(formattedString);
     return true;
 }
 bool editUser(int currentUserId, int importantUserId, char newDescription[]) {
@@ -109,6 +113,9 @@ bool editUser(int currentUserId, int importantUserId, char newDescription[]) {
         fprintf(importantUsersDB, "%d %d %d %s %s\n", importantUsers[index].id, importantUsers[index].currentUserId,
                 importantUsers[index].importantUserId, importantUsers[index].importantUserName, importantUsers[index].description);
     fclose(importantUsersDB);
+    char formattedString[1000];
+    sprintf(formattedString, "The user with the id of %d changed the description of the important user with the id of %d to %s", currentUserId, importantUserId, newDescription);
+    addActivity(formattedString);
     return true;
 }
 
@@ -149,6 +156,10 @@ bool deleteUser(int currentUserId, int importantUserId) {
         fprintf(importantUsersDB, "%d %d %d %s %s\n", importantUsers[index].id, importantUsers[index].currentUserId,
                 importantUsers[index].importantUserId, importantUsers[index].importantUserName, importantUsers[index].description);
     fclose(importantUsersDB);
+    char formattedString[1000];
+    sprintf(formattedString, "The user with the id of %d deleted the user with the id of %d from the list of "
+                             "important users.", currentUserId, importantUserId);
+    addActivity(formattedString);
     return true;
 }
 void displayImportantUsers(int currentUserId) {
@@ -181,6 +192,9 @@ void displayImportantUsers(int currentUserId) {
     fclose(importantUsersDB);
     if (count == 0)
         printf("There are no important users.\n");
+    char formattedString[1000];
+    sprintf(formattedString, "The important users of the user with the id of %d were displayed.", currentUserId);
+    addActivity(formattedString);
 }
 
 bool checkImportantUser(int userId, int importantUserId) {

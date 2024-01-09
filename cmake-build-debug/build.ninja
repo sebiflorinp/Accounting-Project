@@ -91,6 +91,18 @@ build CMakeFiles/cp2.dir/libs/importantUsers/importantUsers.c.o: C_COMPILER__cp2
   OBJECT_DIR = CMakeFiles/cp2.dir
   OBJECT_FILE_DIR = CMakeFiles/cp2.dir/libs/importantUsers
 
+build CMakeFiles/cp2.dir/libs/activityLog/activityLog.c.o: C_COMPILER__cp2_unscanned_Debug /home/sebifp/devStuff/repos/cp2/libs/activityLog/activityLog.c || cmake_object_order_depends_target_cp2
+  DEP_FILE = CMakeFiles/cp2.dir/libs/activityLog/activityLog.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/cp2.dir
+  OBJECT_FILE_DIR = CMakeFiles/cp2.dir/libs/activityLog
+
+build CMakeFiles/cp2.dir/libs/misc/misc.c.o: C_COMPILER__cp2_unscanned_Debug /home/sebifp/devStuff/repos/cp2/libs/misc/misc.c || cmake_object_order_depends_target_cp2
+  DEP_FILE = CMakeFiles/cp2.dir/libs/misc/misc.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/cp2.dir
+  OBJECT_FILE_DIR = CMakeFiles/cp2.dir/libs/misc
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target cp2
@@ -99,7 +111,7 @@ build CMakeFiles/cp2.dir/libs/importantUsers/importantUsers.c.o: C_COMPILER__cp2
 #############################################
 # Link the executable cp2
 
-build cp2: C_EXECUTABLE_LINKER__cp2_Debug CMakeFiles/cp2.dir/main.c.o CMakeFiles/cp2.dir/libs/validation/validation.c.o CMakeFiles/cp2.dir/libs/users/users.c.o CMakeFiles/cp2.dir/libs/accounts/accounts.c.o CMakeFiles/cp2.dir/libs/transactions/transactions.c.o CMakeFiles/cp2.dir/libs/reports/reports.c.o CMakeFiles/cp2.dir/libs/importantUsers/importantUsers.c.o
+build cp2: C_EXECUTABLE_LINKER__cp2_Debug CMakeFiles/cp2.dir/main.c.o CMakeFiles/cp2.dir/libs/validation/validation.c.o CMakeFiles/cp2.dir/libs/users/users.c.o CMakeFiles/cp2.dir/libs/accounts/accounts.c.o CMakeFiles/cp2.dir/libs/transactions/transactions.c.o CMakeFiles/cp2.dir/libs/reports/reports.c.o CMakeFiles/cp2.dir/libs/importantUsers/importantUsers.c.o CMakeFiles/cp2.dir/libs/activityLog/activityLog.c.o CMakeFiles/cp2.dir/libs/misc/misc.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/cp2.dir
   POST_BUILD = :

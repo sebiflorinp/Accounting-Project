@@ -3,6 +3,7 @@
 #include <string.h>
 #include <time.h>
 #include "../models/models.h"
+#include "../activityLog/activityLog.h"
 
 bool deposit(int ownerId, int accountId, float value) {
     /*
@@ -70,6 +71,9 @@ bool deposit(int ownerId, int accountId, float value) {
     transactionsDB = fopen("../db/transactions.txt", "a");
     fprintf(transactionsDB, "%d %d %s %f %d %d %d %d\n", count, accountId, "Income", value, 0, currentDay, currentMonth, currentYear);
     fclose(transactionsDB);
+    char formattedString[1000];
+    sprintf(formattedString, "The user with the id of %d deposited %f money in the account with the id of %d.", ownerId, value, accountId);
+    addActivity(formattedString);
     return true;
 }
 
@@ -143,6 +147,9 @@ bool withdraw(int ownerId, int accountId, float value) {
     transactionsDB = fopen("../db/transactions.txt", "a");
     fprintf(transactionsDB, "%d %d %s %f %d %d %d %d\n", count, accountId, "Expense", value, 0, currentDay, currentMonth, currentYear);
     fclose(transactionsDB);
+    char formattedString[1000];
+    sprintf(formattedString, "The user with the id of %d withdrawn %f money from the account with the id %d", ownerId, value, accountId);
+    addActivity(formattedString);
     return true;
 }
 
@@ -225,6 +232,9 @@ bool transfer(int ownerId, int sourceAccountId, int destinationAccountId, float 
     transactionsDB = fopen("../db/transactions.txt", "a");
     fprintf(transactionsDB, "%d %d %s %f %d %d %d %d\n", count, sourceAccountId, "Expense", value, destinationAccountId, currentDay, currentMonth, currentYear);
     fclose(transactionsDB);
+    char formattedString[1000];
+    sprintf(formattedString, "The user with the id of %d transferred %f money from the account with the id of %d to the account with the id of %d", ownerId, value, sourceAccountId, destinationAccountId);
+    addActivity(formattedString);
     return true;
 }
 
@@ -297,5 +307,8 @@ bool payment(int ownerId, int accountId, float value) {
     transactionsDB = fopen("../db/transactions.txt", "a");
     fprintf(transactionsDB, "%d %d %s %f %d %d %d %d\n", count, accountId, "Expense", value, 0, currentDay, currentMonth, currentYear);
     fclose(transactionsDB);
+    char formattedString[1000];
+    sprintf(formattedString, "The user with the id of %d made a payment with the value of %f from the account with the id of %d", ownerId, value, accountId);
+    addActivity(formattedString);
     return true;
 }

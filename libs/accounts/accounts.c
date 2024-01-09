@@ -1,5 +1,6 @@
 #include "accounts.h"
 #include "../models/models.h"
+#include "../activityLog/activityLog.h"
 #include <stdbool.h>
 #include <stdio.h>
 #include <string.h>
@@ -29,6 +30,10 @@ bool createAccount(int ownerID, char* name, char* type) {
     accountsDB = fopen("../db/accounts.txt", "a");
     // Add the account
     fprintf(accountsDB, "%d %d %s %f %s\n", maxAccountId + 1, ownerID, name, 0.0, type);
+    char formattedString[1000];
+    sprintf(formattedString, "The user with the id of %d has created the account with the id of %d, name of %s"
+                             " and type of %s.", ownerID, maxAccountId + 1, name, type);
+    addActivity(formattedString);
     fclose(accountsDB);
     return true;
 }
@@ -81,6 +86,10 @@ bool editAccount(int ownerId, int accountId, char* newName, char* newType) {
         fprintf(accountsDB, "%d %d %s %f %s\n", accounts[index].accountId, accounts[index].ownerId, accounts[index].name,
                 accounts[index].balance, accounts[index].type);
     fclose(accountsDB);
+    char formattedString[1000];
+    sprintf(formattedString, "The user with the id of %d edited the account with the id of %d with the new name"
+                             " of %s and type of %s.", ownerId, accountId, newName, newType);
+    addActivity(formattedString);
     return true;
 }
 
@@ -123,6 +132,9 @@ bool deleteAccount(int ownerId, int accountId) {
         fprintf(accountsDB, "%d %d %s %f %s\n", accounts[index].accountId, accounts[index].ownerId, accounts[index].name,
                 accounts[index].balance, accounts[index].type);
     fclose(accountsDB);
+    char formattedString[1000];
+    sprintf(formattedString, "The user with the id of %d deleted the account with the id of %d.", ownerId, accountId);
+    addActivity(formattedString);
     return true;
 }
 

@@ -10,4 +10,7 @@
 
     // check if user exists
     bool checkIfUserExists(int id);
+
+    // a function that logs out the user
+    void logOutUser(int loggedInUserId);
 #endif //CP2_USERS_H

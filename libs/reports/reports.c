@@ -33,6 +33,9 @@ void statements(int accountId) {
         }
      if (count == 0)
          printf("There are no statements to display.\n");
+     char formattedString[1000];
+     sprintf(formattedString, "The statements of the account with the id of %d were requested.", accountId);
+     addActivity(formattedString);
 }
 
 void balances(int userId) {
@@ -55,6 +58,9 @@ void balances(int userId) {
         }
     if (count == 0)
         printf("There are no accounts whose balance to display.\n");
+    char formattedString[1000];
+    sprintf(formattedString, "The user with the id of %d has requested their balances.", userId);
+    addActivity(formattedString);
 }
 
 void transactions(int accountId) {
@@ -80,6 +86,9 @@ void transactions(int accountId) {
         }
      if (count == 0)
          printf("There are no transaction to display.\n");
+     char formattedString[1000];
+     sprintf(formattedString, "The statements of the account with the id of %d were requested.", accountId);
+     addActivity(formattedString);
 }
 
 void expenses(int accountId) {
@@ -105,4 +114,7 @@ void expenses(int accountId) {
         }
      if (count == 0)
          printf("There are no expenses to display.\n");
+     char formattedString[1000];
+     sprintf(formattedString, "The expenses of the account with the id of %d were requested.", accountId);
+     addActivity(formattedString);
 }
