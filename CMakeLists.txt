@@ -20,4 +20,6 @@ add_executable(cp2 main.c
         libs/activityLog/activityLog.h
         libs/activityLog/activityLog.c
         libs/misc/misc.c
+        libs/misc/misc.h
+        libs/misc/misc.c
         libs/misc/misc.h)

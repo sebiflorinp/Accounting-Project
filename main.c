@@ -10,6 +10,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include "libs/activityLog/activityLog.h"
+#include "libs/misc/misc.h"
 
 int main() {
     // global variables

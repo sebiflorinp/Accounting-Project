@@ -1,20 +1,72 @@
-The user with the id of 1 the username sebifp and password aaaa was created. Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 16 Second: 10
-The user with the id of 2 the username Ionescu and password aaaa was created. Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 16 Second: 18
-The user with the id of 2 logged in. Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 16 Second: 24
-The user with the id of 2 has created the account with the id of 1, name of primitBani and type of 1. Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 16 Second: 33
-The user with the id of 2 logged out. Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 16 Second: 36
-The user with the id of 1 logged in. Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 16 Second: 43
-The user with the id of 1 has created the account with the id of 2, name of cont and type of 3. Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 16 Second: 51
-The user with the id of 1 deposited 1000.000000 money in the account with the id of 2. Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 17 Second: 0
-The user with the id of 1 transferred 20.000000 money from the account with the id of 2 to the account with the id of 1 Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 17 Second: 17
-The user with the id of 1 logged out. Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 17 Second: 20
+The user with the id of 1 the username sebifp and password aaaa was created.
+Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 49 Second: 22
+
 The user with the id of 1 logged in.
- Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 20 Second: 38
+Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 49 Second: 44
+
+The user with the id of 1 has created the account with the id of 1, name of cont and type of 2.
+Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 50 Second: 35
+
+The user with the id of 1 edited the account with the id of 1 with the new name of Cont and type of 1.
+Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 50 Second: 59
+
+The user with the id of 1 deposited 100.000000 money in the account with the id of 1.
+Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 51 Second: 15
+
+The user with the id of 1 withdrawn 20.000000 money from the account with the id 1
+Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 51 Second: 35
+
+The user with the id of 1 made a payment with the value of 2.222200 from the account with the id of 1
+Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 52 Second: 17
+
+The statements of the account with the id of 1 were requested.
+Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 52 Second: 29
+
 The user with the id of 1 has requested their balances.
- Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 20 Second: 41
-The expenses of the account with the id of 2 were requested.
- Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 20 Second: 58
-The user with the id of 1 made a payment with the value of 11.000000 from the account with the id of 2
- Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 21 Second: 11
+Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 52 Second: 39
+
+The statements of the account with the id of 1 were requested.
+Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 52 Second: 45
+
+The expenses of the account with the id of 1 were requested.
+Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 52 Second: 53
+
 The user with the id of 1 logged out.
- Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 21 Second: 19
+Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 53 Second: 8
+
+The user with the id of 2 the username AAAA and password aaaa was created.
+Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 53 Second: 57
+
+The user with the id of 2 logged in.
+Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 54 Second: 3
+
+The user with the id of 2 has created the account with the id of 2, name of qwerty and type of 2.
+Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 54 Second: 13
+
+The user with the id of 2 deposited 100.000000 money in the account with the id of 2.
+Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 54 Second: 23
+
+The user with the id of 2 transferred 10.000000 money from the account with the id of 2 to the account with the id of 1
+Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 55 Second: 10
+
+The user with the id of 2 added the user with the id of 1 on the list of important users with the description of utilizator important.
+Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 55 Second: 29
+
+The important users of the user with the id of 2 were displayed.
+Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 55 Second: 32
+
+The important users of the user with the id of 2 were displayed.
+Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 55 Second: 56
+
+The important users of the user with the id of 2 were displayed.
+Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 55 Second: 59
+
+The user with the id of 2 changed the description of the important user with the id of 1 to aaaaa
+Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 56 Second: 5
+
+The important users of the user with the id of 2 were displayed.
+Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 56 Second: 6
+
+The user with the id of 2 logged out.
+Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 56 Second: 9
+

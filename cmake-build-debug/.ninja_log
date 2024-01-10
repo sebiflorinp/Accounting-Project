@@ -1,7 +1,7 @@
 # ninja log v5
 1	66	1704462844951669744	CMakeFiles/cp2.dir/libs/dbInteraction/users/users.c.o	a335aec4c7405529
 1	68	1704462844951669744	CMakeFiles/cp2.dir/libs/dbInteraction/accounts/accounts.c.o	1a2e8c714de1007e
-0	26	1704828155582881585	build.ninja	b2f193874755d6b2
+0	26	1704829547250605805	build.ninja	b2f193874755d6b2
 1	41	1704375739761128453	CMakeFiles/cp2.dir/libs/transactions/transaction.c.o	1f9bc746495514
 0	52	1704827737552141559	CMakeFiles/cp2.dir/main.c.o	ba76b122a6fe2afa
 1	59	1704801579232032918	CMakeFiles/cp2.dir/libs/validation/validation.c.o	4e212fe89c3d4e17
@@ -12,3 +12,10 @@
 1	31	1704827502717288281	CMakeFiles/cp2.dir/libs/accounts/accounts.c.o	fe89909e5e7fa051
 46	69	1704828034176772034	cp2	e5d7fe223784a660
 1	43	1704827228279489893	CMakeFiles/cp2.dir/libs/reports/reports.c.o	87fb0614d5c87e76
+1	15	1704829550678582827	CMakeFiles/cp2.dir/libs/misc/misc.c.o	55cefc85b5c21f4e
+1	25	1704829550690582748	CMakeFiles/cp2.dir/libs/activityLog/activityLog.c.o	e33a462889e69851
+0	47	1704829550710582615	CMakeFiles/cp2.dir/main.c.o	ba76b122a6fe2afa
+47	73	1704829550734582455	cp2	19f244882f2b7639
+0	28	1704886014161861916	CMakeFiles/cp2.dir/libs/misc/misc.c.o	55cefc85b5c21f4e
+0	52	1704886014185861684	CMakeFiles/cp2.dir/main.c.o	ba76b122a6fe2afa
+52	79	1704886014209861451	cp2	19f244882f2b7639
