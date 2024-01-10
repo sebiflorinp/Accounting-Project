@@ -10,7 +10,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include "libs/activityLog/activityLog.h"
-#include "libs/misc/misc.h"
+#include "xlsxwriter.h"
 
 int main() {
     // global variables
@@ -524,7 +524,6 @@ int main() {
                              }
                          }
                          // get description
-                         printf("");
                          printf("Input a description for the important user.\n");
                          while (!validDescription) {
                              getchar();
