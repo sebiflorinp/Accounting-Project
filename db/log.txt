@@ -70,3 +70,15 @@ Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 56 Second: 6
 The user with the id of 2 logged out.
 Year: 2024 Month: 1 Day: 9 Hour: 21 Minute: 56 Second: 9
 
+The user with the id of 1 logged in.
+Year: 2024 Month: 1 Day: 10 Hour: 14 Minute: 52 Second: 57
+
+The user with the id of 1 withdrawn 10.000000 money from the account with the id 1
+Year: 2024 Month: 1 Day: 10 Hour: 14 Minute: 53 Second: 6
+
+The important users of the user with the id of 1 were displayed.
+Year: 2024 Month: 1 Day: 10 Hour: 14 Minute: 53 Second: 21
+
+The user with the id of 1 logged out.
+Year: 2024 Month: 1 Day: 10 Hour: 14 Minute: 53 Second: 25
+

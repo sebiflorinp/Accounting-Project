@@ -1,3 +1,7 @@
+# Nume: Pahomi Sebastian
+# Informatica Romana
+## Prezentare: https://www.youtube.com/watch?v=pF2DylfrSgI
+
 # C Project 2
 
 ## Statement
