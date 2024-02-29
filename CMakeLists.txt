@@ -3,7 +3,7 @@ project(Account-Project C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(cp2 main.c
+add_executable(Account-Project main.c
         libs/validation/validation.h
         libs/validation/validation.c
         libs/users/users.h
