@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Account-Project"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Accounting-Project">
+				<Option output="/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/Accounting-Project" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 Accounting-Project"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Accounting-Project/fast">
+				<Option output="/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/Accounting-Project" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 Accounting-Project/fast"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/libs/accounts/accounts.c">
+			<Option target="Accounting-Project"/>
+		</Unit>
+		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/libs/accounts/accounts.h">
+			<Option target="Accounting-Project"/>
+		</Unit>
+		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/libs/activityLog/activityLog.c">
+			<Option target="Accounting-Project"/>
+		</Unit>
+		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/libs/activityLog/activityLog.h">
+			<Option target="Accounting-Project"/>
+		</Unit>
+		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/libs/importantUsers/importantUsers.c">
+			<Option target="Accounting-Project"/>
+		</Unit>
+		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/libs/importantUsers/importantUsers.h">
+			<Option target="Accounting-Project"/>
+		</Unit>
+		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/libs/misc/misc.c">
+			<Option target="Accounting-Project"/>
+		</Unit>
+		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/libs/misc/misc.h">
+			<Option target="Accounting-Project"/>
+		</Unit>
+		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/libs/models/models.h">
+			<Option target="Accounting-Project"/>
+		</Unit>
+		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/libs/obtainData/obtainData.c">
+			<Option target="Accounting-Project"/>
+		</Unit>
+		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/libs/obtainData/obtainData.h">
+			<Option target="Accounting-Project"/>
+		</Unit>
+		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/libs/reports/reports.c">
+			<Option target="Accounting-Project"/>
+		</Unit>
+		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/libs/reports/reports.h">
+			<Option target="Accounting-Project"/>
+		</Unit>
+		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/libs/transactions/transactions.c">
+			<Option target="Accounting-Project"/>
+		</Unit>
+		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/libs/transactions/transactions.h">
+			<Option target="Accounting-Project"/>
+		</Unit>
+		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/libs/users/users.c">
+			<Option target="Accounting-Project"/>
+		</Unit>
+		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/libs/users/users.h">
+			<Option target="Accounting-Project"/>
+		</Unit>
+		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/libs/validation/validation.c">
+			<Option target="Accounting-Project"/>
+		</Unit>
+		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/libs/validation/validation.h">
+			<Option target="Accounting-Project"/>
+		</Unit>
+		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/main.c">
+			<Option target="Accounting-Project"/>
+		</Unit>
+		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/utils/utils.c">
+			<Option target="Accounting-Project"/>
+		</Unit>
+		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/utils/utils.h">
+			<Option target="Accounting-Project"/>
+		</Unit>
+		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

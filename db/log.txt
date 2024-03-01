@@ -82,3 +82,15 @@ Year: 2024 Month: 1 Day: 10 Hour: 14 Minute: 53 Second: 21
 The user with the id of 1 logged out.
 Year: 2024 Month: 1 Day: 10 Hour: 14 Minute: 53 Second: 25
 
+The user with the id of 3 the username asdff and password aaaaa was created.
+Year: 2024 Month: 3 Day: 1 Hour: 14 Minute: 42 Second: 36
+
+The user with the id of 4 the username Andreescu and password asdf was created.
+Year: 2024 Month: 3 Day: 1 Hour: 14 Minute: 43 Second: 45
+
+The user with the id of 1 logged in.
+Year: 2024 Month: 3 Day: 1 Hour: 14 Minute: 46 Second: 58
+
+The user with the id of 1 logged out.
+Year: 2024 Month: 3 Day: 1 Hour: 14 Minute: 47 Second: 3
+

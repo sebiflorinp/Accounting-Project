@@ -22,4 +22,9 @@ add_executable(Accounting-Project main.c
         libs/misc/misc.c
         libs/misc/misc.h
         libs/misc/misc.c
-        libs/misc/misc.h)
+        libs/misc/misc.h
+        libs/obtainData/obtainData.h
+        libs/obtainData/obtainData.c
+        libs/obtainData/obtainData.h
+        utils/utils.c
+        utils/utils.h)

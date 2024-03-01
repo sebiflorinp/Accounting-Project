@@ -4,20 +4,22 @@
 #include "libs/transactions/transactions.h"
 #include "libs/reports/reports.h"
 #include "libs/validation/validation.h"
-#include <time.h>
 #include <string.h>
 #include "libs/importantUsers/importantUsers.h"
 #include <stdbool.h>
 #include <stdlib.h>
 #include "libs/activityLog/activityLog.h"
 #include "xlsxwriter.h"
+#include "libs/obtainData/obtainData.h"
+#include "utils/utils.h"
 
 int main() {
     // global variables
     bool running = true;
     bool loggedIn = false;
     int loggedInUser = 0;
-    char username[2000], password[2000], passwordAgain[2000], action[2000] = "";
+    char* username;
+    char* password, action[2000] = "";
     // application loop
     while (running) {
         // print login menu instruction
@@ -25,43 +27,17 @@ int main() {
                "the following commands:\n  1. Create an account\n  2. Log in\n  3. Exit\n");
         // log in menu loop
         while (!loggedIn && running) {
-            // conditions to meet when making a new account
-            bool validUsername = false;
-            bool validPassword = false;
-            bool passwordsMatch = false;
             // the user chooses an action
             printf("Select an action:\n");
-            scanf("%s", action);
+            fgets(action, 10, stdin);
+            removeTrailingNewLine(action);
             // check if the action is valid
             if (validateActionLoginMenu(action)) {
                 switch (atoi(action)) {
                     // create a new account option
                     case 1:
-                        printf("Input the username.\n");
-                        // the loop asks for an username until it receives a valid one
-                        while (!validUsername) {
-                            scanf("%s", username);
-                            validUsername = validateUsername(username);
-                            if (!validUsername)
-                                printf("The input username is invalid, please input a valid one.\n");
-                        }
-                        printf("Input the password.\n");
-                        // the loop asks for a password until it receives a valid one and is input a second time properly
-                        while (!validPassword || !passwordsMatch) {
-                            while (!validPassword) {
-                                scanf("%s", password);
-                                validPassword = validatePassword(password);
-                                if (!validPassword)
-                                    printf("The password is invalid, please input a valid one.\n");
-                            }
-                            printf("Input the password again.\n");
-                            scanf("%s", passwordAgain);
-                            passwordsMatch = strcmp(password, passwordAgain) == 0;
-                            if (!passwordsMatch) {
-                                 printf("The passwords do not match, please input the passwords again.\n");
-                                 validPassword = false;
-                            }
-                        }
+                        username = obtainUsername();
+                        password = obtainPassword();
                         printf("The account was created successfully.\n");
                         createUser(username, password);
                         break;
@@ -69,9 +45,13 @@ int main() {
                     case 2:
                         // the user is asked to input their username and password
                         printf("Input the username.\n");
-                        scanf("%s", username);
+                        username = malloc(sizeof(char) * 100);
+                        fgets(username, 100, stdin);
+                        removeTrailingNewLine(username);
                         printf("Input the password.\n");
-                        scanf("%s", password);
+                        password = malloc(sizeof(char) * 100);
+                        fgets(password, 100, stdin);
+                        removeTrailingNewLine(password);
                         // loggedInUser has the id of the logged user or 0 if the data wasn't good
                         loggedInUser = logInUser(username, password);
                         if (loggedInUser == 0)
