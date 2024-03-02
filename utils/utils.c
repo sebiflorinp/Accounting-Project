@@ -1,4 +1,5 @@
 #include <string.h>
+#include <stdlib.h>
 #include "utils.h"
 
 void removeTrailingNewLine(char* string) {
