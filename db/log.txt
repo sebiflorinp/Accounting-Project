@@ -94,3 +94,27 @@ Year: 2024 Month: 3 Day: 1 Hour: 14 Minute: 46 Second: 58
 The user with the id of 1 logged out.
 Year: 2024 Month: 3 Day: 1 Hour: 14 Minute: 47 Second: 3
 
+The user with the id of 5 the username Ionescuuul and the encrypted password atfikm was created.
+Year: 2024 Month: 3 Day: 2 Hour: 15 Minute: 52 Second: 16
+
+The user with the id of 5 logged in.
+Year: 2024 Month: 3 Day: 2 Hour: 15 Minute: 52 Second: 50
+
+The user with the id of 5 logged in.
+Year: 2024 Month: 3 Day: 2 Hour: 15 Minute: 55 Second: 55
+
+The user with the id of 5 has created the account with the id of 3, name of qwertyyyy and type of 1.
+Year: 2024 Month: 3 Day: 2 Hour: 15 Minute: 56 Second: 6
+
+The user with the id of 5 logged in.
+Year: 2024 Month: 3 Day: 2 Hour: 15 Minute: 57 Second: 10
+
+The user with the id of 5 edited the account with the id of 3 with the new name of Account and type of 2.
+Year: 2024 Month: 3 Day: 2 Hour: 15 Minute: 57 Second: 25
+
+The statements of the account with the id of 3 were requested.
+Year: 2024 Month: 3 Day: 2 Hour: 15 Minute: 57 Second: 51
+
+The user with the id of 5 logged out.
+Year: 2024 Month: 3 Day: 2 Hour: 15 Minute: 57 Second: 55
+

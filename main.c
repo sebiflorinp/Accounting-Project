@@ -8,8 +8,6 @@
 #include "libs/importantUsers/importantUsers.h"
 #include <stdbool.h>
 #include <stdlib.h>
-#include "libs/activityLog/activityLog.h"
-#include "xlsxwriter.h"
 #include "libs/obtainData/obtainData.h"
 #include "utils/utils.h"
 
@@ -112,6 +110,7 @@ int main() {
             bool validAccountId = false, validConfirmation = false, validAccountIdToTransfer = false, validUserId = false;
             printf("Select an action:\n");
             fgets(action, 10, stdin);
+            removeTrailingNewLine(action);
             if (validateActionMenu(action)) {
                 switch (atoi(action)) {
                     // financial account creation
@@ -252,13 +251,13 @@ int main() {
                             printf("Input the id of the account from which the payment will be made.\n");
                             displayAccounts(loggedInUser);
                             accountId = obtainAccountId(loggedInUser);
-                            printf("Input the amount of money that will be withdrawn\n");
+                            printf("Input the amount of money that will be used\n");
                             value = obtainValue();
                             // make the payment and notify the user
                             if (payment(loggedInUser, atoi(accountId), atof(value)))
-                                printf("The withdrawal was made successfully!\n");
+                                printf("The payment was made successfully!\n");
                             else
-                                printf("The payment was unsuccessful, you can not pay more money then are"
+                                printf("The payment was unsuccessful, you can not use more money then are"
                                        " in the account.\n");
                             free(accountId);
                             free(value);
@@ -431,7 +430,7 @@ int main() {
                         break;
                 }
             } else {
-
+                printf("The was not a valid action, please choose a valid one!\n");
             }
         }
     }

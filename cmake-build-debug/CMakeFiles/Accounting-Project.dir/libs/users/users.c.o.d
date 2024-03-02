@@ -28,4 +28,5 @@ CMakeFiles/Accounting-Project.dir/libs/users/users.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/users/../../libs/activityLog/activityLog.h
+ /home/sebifp/devStuff/repos/Accounting-Project/libs/users/../../libs/activityLog/activityLog.h \
+ /home/sebifp/devStuff/repos/Accounting-Project/libs/users/../../utils/utils.h

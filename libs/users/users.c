@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "../../libs/activityLog/activityLog.h"
+#include "../../utils/utils.h"
 
 bool createUser(char* username, char* password) {
     /*
@@ -25,12 +26,14 @@ bool createUser(char* username, char* password) {
         counter++;
     }
     fclose(usersDB);
+    // encrypt password
+    strcpy(password, encrypt(password));
     // if there is no other users with the received username add the new user and return true
     usersDB = fopen("../db/users.txt", "a");
     fprintf(usersDB,"%d %s %s\n", counter, username, password);
     fclose(usersDB);
     char formattedString[1000];
-    sprintf(formattedString, "The user with the id of %d the username %s and password %s was created.", counter, username, password);
+    sprintf(formattedString, "The user with the id of %d the username %s and the encrypted password %s was created.", counter, username, password);
     addActivity(formattedString);
     return true;
 }
@@ -45,6 +48,8 @@ int logInUser(char *username, char* password) {
     // open db
     FILE *usersDB;
     usersDB = fopen("../db/users.txt", "r");
+    // encrypt the password
+    strcpy(password, encrypt(password));
     // declare id, username and password for data from the db
     int idDB;
     char usernameDB[200], passwordDB[200];
