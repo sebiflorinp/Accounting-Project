@@ -94,12 +94,6 @@
 		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/libs/importantUsers/importantUsers.h">
 			<Option target="Accounting-Project"/>
 		</Unit>
-		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/libs/misc/misc.c">
-			<Option target="Accounting-Project"/>
-		</Unit>
-		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/libs/misc/misc.h">
-			<Option target="Accounting-Project"/>
-		</Unit>
 		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/libs/models/models.h">
 			<Option target="Accounting-Project"/>
 		</Unit>

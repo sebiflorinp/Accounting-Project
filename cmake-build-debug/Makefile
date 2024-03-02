@@ -201,30 +201,6 @@ libs/importantUsers/importantUsers.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Accounting-Project.dir/build.make CMakeFiles/Accounting-Project.dir/libs/importantUsers/importantUsers.c.s
 .PHONY : libs/importantUsers/importantUsers.c.s
 
-libs/misc/misc.o: libs/misc/misc.c.o
-.PHONY : libs/misc/misc.o
-
-# target to build an object file
-libs/misc/misc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Accounting-Project.dir/build.make CMakeFiles/Accounting-Project.dir/libs/misc/misc.c.o
-.PHONY : libs/misc/misc.c.o
-
-libs/misc/misc.i: libs/misc/misc.c.i
-.PHONY : libs/misc/misc.i
-
-# target to preprocess a source file
-libs/misc/misc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Accounting-Project.dir/build.make CMakeFiles/Accounting-Project.dir/libs/misc/misc.c.i
-.PHONY : libs/misc/misc.c.i
-
-libs/misc/misc.s: libs/misc/misc.c.s
-.PHONY : libs/misc/misc.s
-
-# target to generate assembly for a file
-libs/misc/misc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Accounting-Project.dir/build.make CMakeFiles/Accounting-Project.dir/libs/misc/misc.c.s
-.PHONY : libs/misc/misc.c.s
-
 libs/obtainData/obtainData.o: libs/obtainData/obtainData.c.o
 .PHONY : libs/obtainData/obtainData.o
 
@@ -411,9 +387,6 @@ help:
 	@echo "... libs/importantUsers/importantUsers.o"
 	@echo "... libs/importantUsers/importantUsers.i"
 	@echo "... libs/importantUsers/importantUsers.s"
-	@echo "... libs/misc/misc.o"
-	@echo "... libs/misc/misc.i"
-	@echo "... libs/misc/misc.s"
 	@echo "... libs/obtainData/obtainData.o"
 	@echo "... libs/obtainData/obtainData.i"
 	@echo "... libs/obtainData/obtainData.s"

@@ -19,10 +19,6 @@ add_executable(Accounting-Project main.c
         libs/importantUsers/importantUsers.h
         libs/activityLog/activityLog.h
         libs/activityLog/activityLog.c
-        libs/misc/misc.c
-        libs/misc/misc.h
-        libs/misc/misc.c
-        libs/misc/misc.h
         libs/obtainData/obtainData.h
         libs/obtainData/obtainData.c
         libs/obtainData/obtainData.h
