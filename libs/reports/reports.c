@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <string.h>
+#include "../activityLog/activityLog.h"
 
 void statements(int accountId) {
     /*

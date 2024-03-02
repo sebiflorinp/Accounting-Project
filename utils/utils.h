@@ -7,4 +7,6 @@ char* encrypt(char* toEncrypt);
 
 char* parseText(char* toParse);
 
+void freeMemory(char* ptr);
+
 #endif //ACCOUNT_PROJECT_UTILS_H

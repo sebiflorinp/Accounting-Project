@@ -20,3 +20,9 @@ char* encrypt(char* toEncrypt) {
     }
     return encryptedData;
 }
+
+void freeMemory(char* ptr) {
+    memset(ptr, 0, strlen(ptr) * sizeof(char));
+    free(ptr);
+    ptr = 0;
+}

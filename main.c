@@ -40,6 +40,8 @@ int main() {
                         password = obtainPassword();
                         printf("The account was created successfully.\n");
                         createUser(username, password);
+                        freeMemory(username);
+                        freeMemory(password);
                         break;
                     // log in option
                     case 2:
@@ -60,6 +62,8 @@ int main() {
                             loggedIn = true;
                             printf("You have logged in successfully.\n");
                         }
+                        freeMemory(username);
+                        freeMemory(password);
                         break;
                         // exit option
                     case 3:
