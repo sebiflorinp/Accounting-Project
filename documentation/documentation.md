@@ -15,69 +15,17 @@
 </style>
 
 
-# C Project 2
-
-## Statement
-
-An accounting project involves managing financial and accounting data, performing financial
-calculations, generating reports, and ensuring data security. Here are some common requirements
-for such a project:
-1. User Interface: Develop a user interface (UI) to allow users to input and view financial data. This
-can be a command-line program or a graphical user interface (recommended). 10 points /20 points
-2. Account Management: Allow users to create, edit, and delete financial accounts, such as savings
-accounts, checking accounts, credit accounts, etc. 10 points
-3. Transaction Recording: Implement functionality to record financial transactions, including
-deposits, withdrawals, transfers, payments, and more. 10 points
-4. Balance Calculation: Automatically calculate account balances based on recorded transactions.
-10 points
-5. Financial Reporting: Provide options for generating financial reports, such as account
-statements, balances, transaction registers, and expense reports. 5 points
-6. Security and Authentication: Ensure that financial data is protected, and users must authenticate
-to access the accounting system. 5 points
-7. Customer Data Management: Allow users to input and manage information about customers or
-entities with whom they do business. 5 points
-8. Data Export and Import: Offer options for exporting and importing financial data in and out of
-various file formats (e.g., CSV, Excel, PDF export). 5 points
-9. Input Data Validation: Perform checks on user-entered data to prevent errors or incorrect data.
-10 points
-10. Error and Exception Handling: Implement a system for proper error handling and handling
-exceptional situations that may arise during the accounting process. 15 points
-11. Audit and Logging: Maintain an activity log and provide audit capabilities to track changes and
-activities related to accounts. 5 points
-12. Documentation and Comments: Document the code (PDF) and add comments to make it easier
-to understand. 10 points
-13. Compliance with Specific Project Requirements: Ensure that the project meets the specific
-requirements set by the instructor.
-14. Presentation and Explanations: Ensure that you can explain and present the project to the
-instructor or peers, highlighting key features and design decisions.
-
-<div style="page-break-after: always"></div>
+# Accounting Project
 
 ## Features
 
-| Index |                          Feature                          |
-|:-----:|:---------------------------------------------------------:|
-|  1.1  |                  Create an user account.                  |
-|  1.2  |                 Log into an user account.                 |
-|  1.3  |               Sign out of an user account.                |
-|  2.1  |                Create a financial account.                |
-|  2.2  |                 Edit a financial account.                 |
-|  2.3  |                Delete a financial account.                |
-|  3.1  |                      Deposit money.                       |
-|  3.2  |                      Withdraw money.                      |
-|  3.3  |        Transfer money between financial accounts.         |
-|  3.4  |                      Make a payment.                      |
-|  4.1  |                   Record transactions.                    |
-|  5.1  | Calculate the balance based on the recorded transactions. |
-|  6.1  |        Print the statements of a selected account.        |
-|  6.2  |            Print the balance of all accounts.             |
-|  6.3  |       Print the transactions of a selected account.       |
-|  6.4  |         Print the expenses of a selected account.         |
-|  7.1  |        Add an user to the list of important users.        |
-|  7.2  |        Edit the description of an important user.         |
-|  7.3  |        Delete a user from the important user list.        |
-|  7.4  |                 Display important users.                  |
-|  8.1  |                   Have an activity log.                   |
+1. Command line user interface which allows users to input and view financial data.
+2. Users can create, edit, and delete financial accounts.
+3. Financial transactions are recorded by the application and can be viewed by the users.
+4. Users can view financial reports, such as account statements, balances, transaction registers, and expense reports.
+5. Users must authenticate to access the accounting system and their data is encrypted in the database.
+6. Users can input and manage information about customers or entities with whom they do business. 
+7. An activity log is maintained and can be accessed by users with special previleges.
 
 <div style="page-break-after: always"></div>
 
@@ -115,8 +63,6 @@ instructor or peers, highlighting key features and design decisions.
 |  1.   |   3   |                   -                   |        The user has chosen to exit the application.        |
 |  2.   |   -   | Thank you for using this application! | The user receives a message and the application is closed. |
 
-<div style="page-break-after: always"></div>
-
 ### Create a financial account
 
 | Index |      Input      |                                      Output                                      |                           Description                           |
@@ -127,6 +73,8 @@ instructor or peers, highlighting key features and design decisions.
 |  4.   |        -        | Choose the type of the account:<br>  1. Savings<br>  2. Checking<br>  3. Credits |      The user is asked to choose the type of the account.       |
 |  5.   |        1        |                                        -                                         |            The input is received by the application.            |
 |  6.   |        -        |                      The account was created successfully.                       | The user is notified that the account was created successfully. |
+
+<div style="page-break-after: always"></div>
 
 ### Edit a financial account
 
@@ -154,6 +102,8 @@ instructor or peers, highlighting key features and design decisions.
 |  5.   |   y   |                                                       -                                                       |                  The input is received by the application.                   |
 |  6.   |   -   |                                     The account was deleted successfully.                                     |        The user is notified that the account was delete successfully.        |
 
+<div style="page-break-after: always"></div>
+
 ### Deposit money into a financial account
 
 | Index | Input |                                                Output                                                 |                                 Description                                 |
@@ -177,6 +127,8 @@ instructor or peers, highlighting key features and design decisions.
 |  4.   |   -   |                            Input the amount of money that will be withdrawn.                            |    The user is asked to input the amount of money that will be withdrawn.    |
 |  5.   |   3   |                                                    -                                                    |                  The input is received by the application.                   |
 |  6.   |   -   |                                  The withdrawal was made successfully!                                  |       The user is notified that the withdrawal was made successfully.        |
+
+<div style="page-break-after: always"></div>
 
 ### Transfer money from a financial account to another
 
@@ -214,6 +166,8 @@ instructor or peers, highlighting key features and design decisions.
 |  2.   |   -   |        Input the id of the account:<br>A list of accounts.        | The user is asked to input the id of the account of which the statement will be made. |
 |  3.   |   2   |                                 -                                 |                       The input is received by the application.                       |
 |  4.   |   -   | Statement <br>A list with all transactions from the last 31 days. |          The application displays all transactions made in the last 31 days.          |
+  
+<div style="page-break-after: always"></div>
 
 ### Print the balance of all accounts
 
@@ -221,8 +175,6 @@ instructor or peers, highlighting key features and design decisions.
 |:-----:|:-----:|:-------------------------------------------------------------------------------:|:------------------------------------------------------------:|
 |  1.   |   9   |                                        -                                        | The user has chosen to display the balances of all accounts. |
 |  2.   |   -   | Balances:<br> a list with the id, name and balance of all accounts of the user. |    The application displays the balance of all accounts.     |
-
-<div style="page-break-after: always"></div>
 
 ### Print the transactions of a selected account
 
@@ -254,6 +206,8 @@ instructor or peers, highlighting key features and design decisions.
 |  4.   |         -          |           Input a description for the important user.           |                       The user is asked to input a description of the important user.                       |
 |  5.   | An important user. |                                -                                |                                  The input is received by the application.                                  |
 |  6.   |         -          | The user was added successfully in the list of important users! | The user is notified that the user with the input id was added successfully in the list of important users. |
+  
+<div style="page-break-after: always"></div>
 
 ### Update an important user from the list of important users
 
@@ -264,8 +218,9 @@ instructor or peers, highlighting key features and design decisions.
 |  3.   |             3             |                                            -                                            |                             The input is received by the application.                             |
 |  4.   |             -             |                    Input the new description of the important user.                     |             The user is asked to input an updated description of the important user.              |
 |  5.   | An really important user. |                                            -                                            |                             The input is received by the application.                             |
-|  6.   |             -             |                           The user was updated successfully!                            |          The user is notified that the user with the input id was updated successfully.           |
-
+|  6.   |             -             |                           The user was updated successfully!                            |           The user is notified that the user with the input id was updated successfully           |
+|
+ 
 <div style="page-break-after: always"></div>
 
 ### Delete an important user from the list of important users
@@ -292,8 +247,3 @@ instructor or peers, highlighting key features and design decisions.
 |:-----:|:-----:|:--------------------------------------:|:------------------------------------------------------------:|
 |  1.   |  16   |                   -                    |               The user has chosen to sign out.               |
 |  2.   |   -   | You have been signed out successfully! | The user is notified that they were signed out successfully. |
-
-
-
-
-
