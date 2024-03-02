@@ -1,5 +1,4 @@
 #include <string.h>
-#include <malloc.h>
 #include "utils.h"
 
 void removeTrailingNewLine(char* string) {
