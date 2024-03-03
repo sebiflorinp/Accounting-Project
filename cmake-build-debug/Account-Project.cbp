@@ -88,6 +88,12 @@
 		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/libs/activityLog/activityLog.h">
 			<Option target="Accounting-Project"/>
 		</Unit>
+		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/libs/dbOperations/dbOperations.c">
+			<Option target="Accounting-Project"/>
+		</Unit>
+		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/libs/dbOperations/dbOperations.h">
+			<Option target="Accounting-Project"/>
+		</Unit>
 		<Unit filename="/home/sebifp/devStuff/repos/Accounting-Project/libs/importantUsers/importantUsers.c">
 			<Option target="Accounting-Project"/>
 		</Unit>

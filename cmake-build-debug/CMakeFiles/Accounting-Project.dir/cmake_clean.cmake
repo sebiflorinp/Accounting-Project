@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Accounting-Project.dir/libs/accounts/accounts.c.o.d"
   "CMakeFiles/Accounting-Project.dir/libs/activityLog/activityLog.c.o"
   "CMakeFiles/Accounting-Project.dir/libs/activityLog/activityLog.c.o.d"
+  "CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.o"
+  "CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.o.d"
   "CMakeFiles/Accounting-Project.dir/libs/importantUsers/importantUsers.c.o"
   "CMakeFiles/Accounting-Project.dir/libs/importantUsers/importantUsers.c.o.d"
   "CMakeFiles/Accounting-Project.dir/libs/obtainData/obtainData.c.o"

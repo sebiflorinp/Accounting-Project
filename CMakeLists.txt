@@ -23,4 +23,6 @@ add_executable(Accounting-Project main.c
         libs/obtainData/obtainData.c
         libs/obtainData/obtainData.h
         utils/utils.c
-        utils/utils.h)
+        utils/utils.h
+        libs/dbOperations/dbOperations.c
+        libs/dbOperations/dbOperations.h)

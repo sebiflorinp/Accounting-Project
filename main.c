@@ -10,6 +10,8 @@
 #include <stdlib.h>
 #include "libs/obtainData/obtainData.h"
 #include "utils/utils.h"
+#include "libs/models/models.h"
+#include "libs/dbOperations/dbOperations.h"
 
 int main() {
     // global variables
@@ -19,6 +21,11 @@ int main() {
     char* username;
     char* password;
     char* action;
+    User* users = malloc(sizeof(User)*1000);
+    int numberOfUsers = loadUsers(users);
+    users = realloc(users, numberOfUsers);
+    for (int i = 0; i < numberOfUsers; i++)
+        printf("%d, %s, %s", users[i].id, users[i].username, users[i].password);
     // application loop
     while (running) {
         // print login menu instruction

@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/sebifp/devStuff/repos/Accounting-Project/libs/accounts/accounts.c" "CMakeFiles/Accounting-Project.dir/libs/accounts/accounts.c.o" "gcc" "CMakeFiles/Accounting-Project.dir/libs/accounts/accounts.c.o.d"
   "/home/sebifp/devStuff/repos/Accounting-Project/libs/activityLog/activityLog.c" "CMakeFiles/Accounting-Project.dir/libs/activityLog/activityLog.c.o" "gcc" "CMakeFiles/Accounting-Project.dir/libs/activityLog/activityLog.c.o.d"
+  "/home/sebifp/devStuff/repos/Accounting-Project/libs/dbOperations/dbOperations.c" "CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.o" "gcc" "CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.o.d"
   "/home/sebifp/devStuff/repos/Accounting-Project/libs/importantUsers/importantUsers.c" "CMakeFiles/Accounting-Project.dir/libs/importantUsers/importantUsers.c.o" "gcc" "CMakeFiles/Accounting-Project.dir/libs/importantUsers/importantUsers.c.o.d"
   "/home/sebifp/devStuff/repos/Accounting-Project/libs/obtainData/obtainData.c" "CMakeFiles/Accounting-Project.dir/libs/obtainData/obtainData.c.o" "gcc" "CMakeFiles/Accounting-Project.dir/libs/obtainData/obtainData.c.o.d"
   "/home/sebifp/devStuff/repos/Accounting-Project/libs/reports/reports.c" "CMakeFiles/Accounting-Project.dir/libs/reports/reports.c.o" "gcc" "CMakeFiles/Accounting-Project.dir/libs/reports/reports.c.o.d"

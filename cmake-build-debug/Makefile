@@ -177,6 +177,30 @@ libs/activityLog/activityLog.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Accounting-Project.dir/build.make CMakeFiles/Accounting-Project.dir/libs/activityLog/activityLog.c.s
 .PHONY : libs/activityLog/activityLog.c.s
 
+libs/dbOperations/dbOperations.o: libs/dbOperations/dbOperations.c.o
+.PHONY : libs/dbOperations/dbOperations.o
+
+# target to build an object file
+libs/dbOperations/dbOperations.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Accounting-Project.dir/build.make CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.o
+.PHONY : libs/dbOperations/dbOperations.c.o
+
+libs/dbOperations/dbOperations.i: libs/dbOperations/dbOperations.c.i
+.PHONY : libs/dbOperations/dbOperations.i
+
+# target to preprocess a source file
+libs/dbOperations/dbOperations.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Accounting-Project.dir/build.make CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.i
+.PHONY : libs/dbOperations/dbOperations.c.i
+
+libs/dbOperations/dbOperations.s: libs/dbOperations/dbOperations.c.s
+.PHONY : libs/dbOperations/dbOperations.s
+
+# target to generate assembly for a file
+libs/dbOperations/dbOperations.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Accounting-Project.dir/build.make CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.s
+.PHONY : libs/dbOperations/dbOperations.c.s
+
 libs/importantUsers/importantUsers.o: libs/importantUsers/importantUsers.c.o
 .PHONY : libs/importantUsers/importantUsers.o
 
@@ -384,6 +408,9 @@ help:
 	@echo "... libs/activityLog/activityLog.o"
 	@echo "... libs/activityLog/activityLog.i"
 	@echo "... libs/activityLog/activityLog.s"
+	@echo "... libs/dbOperations/dbOperations.o"
+	@echo "... libs/dbOperations/dbOperations.i"
+	@echo "... libs/dbOperations/dbOperations.s"
 	@echo "... libs/importantUsers/importantUsers.o"
 	@echo "... libs/importantUsers/importantUsers.i"
 	@echo "... libs/importantUsers/importantUsers.s"
