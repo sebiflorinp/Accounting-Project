@@ -1,45 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <stdbool.h>
 #include "dbOperations.h"
-#include "../../utils/utils.h"
-#include "../activityLog/activityLog.h"
-
-bool adddUser(User* userToAdd) {
-    /*
-     * A function that adds a new user in the users table and returns true or returns false if the operation cannot be performed
-     * Preconditions: userToAdd: a User struct pointer
-     * Post-conditions: a bool
-     */
-    // open db
-    FILE *usersDB;
-    usersDB = fopen("../db/users.txt", "r");
-    User* user;
-    user = malloc(sizeof(User));
-    int counter = 1;
-    // check if there is any other user with the same username as the input one return false if there aren't any
-    while (fscanf(usersDB, "%d %s %s", &user->id, user->username, user->password) == 3) {
-        if (strcmp(userToAdd->username, user->username) == 0)
-            return false;
-        counter++;
-    }
-    fclose(usersDB);
-    // encrypt password
-    strcpy(userToAdd->password, encrypt(userToAdd->password));
-    // if there is no other users with the received username add the new user and return true
-    usersDB = fopen("../db/users.txt", "a");
-    fprintf(usersDB, "%d %s %s\n", counter, userToAdd->username, userToAdd->password);
-    fclose(usersDB);
-    char formattedString[1000];
-    sprintf(formattedString, "The user with the id of %d the username %s and the encrypted password %s was created.",
-            counter, userToAdd->username, userToAdd->password);
-    addActivity(formattedString);
-    memset(user, 0, sizeof(User));
-    free(user);
-    user = 0;
-    return true;
-}
 
 int loadUsers(User* users) {
     FILE *usersDB;

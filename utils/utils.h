@@ -9,4 +9,8 @@ char* parseText(char* toParse);
 
 void freeMemory(char* ptr);
 
+void displayLoginInstructions();
+
+void displayApplicationInstructions();
+
 #endif //ACCOUNT_PROJECT_UTILS_H

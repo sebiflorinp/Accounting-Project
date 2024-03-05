@@ -2,12 +2,13 @@
 #define CP2_ACCOUNTS_H
 
 #include <stdbool.h>
+#include "../models/models.h"
 
-    // function that adds a financial account in the db
-    bool createAccount(int ownerID, char* name, char* type);
+// function that adds a financial account in the db
+    bool createAccount(int ownerID, char* name, char* type, Account* accounts, int numberOfAccounts);
 
     // function that edits a financial account in the db
-    bool editAccount(int ownerId, int accountId, char* newName, char* newType);
+    bool editAccount(int ownerId, int accountId, char* newName, char* newType, Account* accounts, int numberOfAccounts);
 
     // function that deletes a financial account in the db
     bool deleteAccount(int ownerId, int accountId);

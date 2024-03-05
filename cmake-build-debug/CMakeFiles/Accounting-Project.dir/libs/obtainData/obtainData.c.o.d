@@ -55,4 +55,5 @@ CMakeFiles/Accounting-Project.dir/libs/obtainData/obtainData.c.o: \
  /home/sebifp/devStuff/repos/Accounting-Project/libs/obtainData/obtainData.h \
  /home/sebifp/devStuff/repos/Accounting-Project/libs/obtainData/../validation/validation.h \
  /home/sebifp/devStuff/repos/Accounting-Project/libs/obtainData/../../utils/utils.h \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/obtainData/../accounts/accounts.h
+ /home/sebifp/devStuff/repos/Accounting-Project/libs/obtainData/../accounts/accounts.h \
+ /home/sebifp/devStuff/repos/Accounting-Project/libs/obtainData/../accounts/../models/models.h
