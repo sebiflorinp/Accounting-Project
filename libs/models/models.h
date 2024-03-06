@@ -11,7 +11,7 @@
     typedef struct {
         int id;
         int sourceAccountId;
-        char* type;
+        char type[40];
         float value;
         int destinationAccountId;
         int day;
