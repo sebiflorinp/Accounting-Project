@@ -7,7 +7,7 @@
     void balances(int userId);
 
     // a function that prints all transactions of an account
-    void displayTransactions(int accountId);
+    void transactions(int accountId);
 
     // a function that prints all expenses of an account
     void expenses(int accountId);

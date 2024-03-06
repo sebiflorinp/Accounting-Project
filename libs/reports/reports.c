@@ -64,7 +64,7 @@ void balances(int userId) {
     addActivity(formattedString);
 }
 
-void displayTransactions(int accountId) {
+void transactions(int accountId) {
     /*
      * A function that prints all transactions made from and towards the account with the received id
      * Preconditions: accountId: an int

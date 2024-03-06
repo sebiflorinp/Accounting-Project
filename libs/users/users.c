@@ -2,44 +2,38 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
 #include "../../libs/activityLog/activityLog.h"
 #include "../../utils/utils.h"
-#include "../models/models.h"
-#include "../dbOperations/dbOperations.h"
 
-bool createUser(char* username, char* password, User* users, int numberOfUsers) {
+bool createUser(char* username, char* password) {
     /*
      * A function that adds a new user in the users table and returns true or returns false if the operation cannot be performed
      * Preconditions: username: a char array
      *                password: a char array
      * Post-conditions: a bool
      */
-    // check if there are any users with the input username
-    for (int i = 0; i < numberOfUsers; i++)
-        if (strcmp(users[i].username, username) == 0)
+    // open db
+    FILE *usersDB;
+    usersDB = fopen("../db/users.txt", "r");
+    // declare id, username and password for data from the db
+    int idDB;
+    char usernameDB[200], passwordDB[200];
+    int counter = 1;
+    // check if there is any other user with the same username as the input one return false if there aren't any
+    while (fscanf(usersDB, "%d %s %s", &idDB, usernameDB, passwordDB) == 3) {
+        if (strcmp(username, usernameDB) == 0)
             return false;
-    //find max id
-    int maxId = 0;
-    for (int i = 0; i < numberOfUsers; i++)
-        if (maxId < users[i].id)
-            maxId = users[i].id;
+        counter++;
+    }
+    fclose(usersDB);
     // encrypt password
     strcpy(password, encrypt(password));
     // if there is no other users with the received username add the new user and return true
-    users = realloc(users, numberOfUsers + 1);
-    users[numberOfUsers].id = maxId + 1;
-    strcpy(users[numberOfUsers].username, username);
-    strcpy(users[numberOfUsers].password, password);
-    saveUsers(users, numberOfUsers + 1);
+    usersDB = fopen("../db/users.txt", "a");
+    fprintf(usersDB,"%d %s %s\n", counter, username, password);
+    fclose(usersDB);
     char formattedString[1000];
-    sprintf(
-            formattedString,
-            "The user with the id of %d the username %s and the encrypted password %s was created.",
-            users[numberOfUsers].id,
-            users[numberOfUsers].username,
-            users[numberOfUsers].password
-            );
+    sprintf(formattedString, "The user with the id of %d the username %s and the encrypted password %s was created.", counter, username, password);
     addActivity(formattedString);
     return true;
 }

@@ -3,6 +3,7 @@
 
 #include "../models/models.h"
 
+
 int loadUsers(User* users);
 
 void saveUsers(User* users, int numberOfUsers);
@@ -15,9 +16,6 @@ int loadAccounts(Account* accounts);
 
 void saveAccounts(Account* accounts, int numberOfAccounts);
 
-int loadImportantUsers(ImportantUser* importantUsers);
-
-void saveImportantUsers(ImportantUser* importantUsers, int numberOfImportantUsers);
 
 #endif //ACCOUNT_PROJECT_DBOPERATIONS_H
 

@@ -1,50 +1,44 @@
 #include "accounts.h"
 #include "../models/models.h"
 #include "../activityLog/activityLog.h"
-#include "../dbOperations/dbOperations.h"
 #include <stdbool.h>
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
 
-bool createAccount(int ownerID, char* name, char* type, Account* accounts, int numberOfAccounts) {
+bool createAccount(int ownerID, char* name, char* type) {
     /*
      * A function that attempts to add a new entry in the accounts db and returns a bool depending on the result
      * Preconditions: ownerID: am int
      *                name: a char array
      *                type: an int
      */
-    // check if there is already an account owned by the logged in user with the same name
-    for (int i = 0; i < numberOfAccounts; i++)
-        if (strcmp(accounts[i].name, name) == 0 && ownerID == accounts[i].ownerId)
+    // open the db
+    FILE *accountsDB = fopen("../db/accounts.txt", "r");
+    int ownerIdDB, accountIdDB;
+    float balanceDB;
+    char nameDB[100], typeDB[100];
+    int maxAccountId = 0;
+    // Checks if the user already has an account with the same name as the received one
+    while (fscanf(accountsDB, "%d %d %s %f %s", &accountIdDB, &ownerIdDB, nameDB, &balanceDB, typeDB) == 5) {
+        if (ownerID == ownerIdDB && strcmp(name, nameDB) == 0)
             return false;
-    // find the maxId
-    int maxId = 0;
-    for (int i = 0; i < numberOfAccounts; i++)
-        if (accounts[i].accountId > maxId)
-            maxId = accounts[i].accountId;
+        if (maxAccountId < accountIdDB)
+            maxAccountId = accountIdDB;
+    }
+    fclose(accountsDB);
     // Add the account if the user doesn't have one with the same name
-    accounts = realloc(accounts, numberOfAccounts + 1);
-    accounts[numberOfAccounts].accountId = maxId + 1;
-    accounts[numberOfAccounts].ownerId = ownerID;
-    strcpy(accounts[numberOfAccounts].name, name);
-    strcpy(accounts[numberOfAccounts].type, type);
-    accounts[numberOfAccounts].balance = 0;
-    saveAccounts(accounts, numberOfAccounts + 1);
+    accountsDB = fopen("../db/accounts.txt", "a");
+    // Add the account
+    fprintf(accountsDB, "%d %d %s %f %s\n", maxAccountId + 1, ownerID, name, 0.0, type);
     char formattedString[1000];
-    sprintf(
-            formattedString,
-            "The user with the id of %d has created the account with the id of %d, name of %s and type of %s.",
-            accounts[numberOfAccounts].accountId,
-            accounts[numberOfAccounts].ownerId,
-            accounts[numberOfAccounts].name,
-            accounts[numberOfAccounts].type
-            );
+    sprintf(formattedString, "The user with the id of %d has created the account with the id of %d, name of %s"
+                             " and type of %s.", ownerID, maxAccountId + 1, name, type);
     addActivity(formattedString);
+    fclose(accountsDB);
     return true;
 }
 
-bool editAccount(int ownerId, int accountId, char* newName, char* newType, Account* accounts, int numberOfAccounts) {
+bool editAccount(int ownerId, int accountId, char* newName, char* newType) {
     /*
      * A function that edits the account with the given id of the user with the given id
      * Preconditions: ownerId: an int
@@ -53,28 +47,48 @@ bool editAccount(int ownerId, int accountId, char* newName, char* newType, Accou
      *                newType: an int
      * Post-conditions: a bool
      */
+    // open the db
+    FILE *accountsDB = fopen("../db/accounts.txt", "r");
+    int ownerIdDB, accountIdDB;
+    float balanceDB;
+    char nameDB[100], typeDB[100];
+    Account accounts[1000];
+    // store the accounts in an array and edit the account with the matching ids
+    int count = 0;
     bool found = false;
-    // edit the accounts
-    for (int i = 0; i < numberOfAccounts; i++)
-        if (ownerId == accounts[i].ownerId && accountId == accounts[i].accountId) {
+    while (fscanf(accountsDB, "%d %d %s %f %s", &accountIdDB, &ownerIdDB, nameDB, &balanceDB, typeDB) == 5) {
+        // if another account already has the name of the updated account return false
+        if (strcmp(nameDB, newName) == 0)
+            return 0;
+        if (ownerId == ownerIdDB && accountId == accountIdDB) {
+            accounts[count].accountId = accountIdDB;
+            accounts[count].ownerId = ownerIdDB;
+            strcpy(accounts[count].type, newType);
+            strcpy(accounts[count].name, newName);
+            accounts[count].balance = balanceDB;
             found = true;
-            strcpy(accounts[i].name, newName);
-            strcpy(accounts[i].type, newType);
+        } else {
+            accounts[count].accountId = accountIdDB;
+            accounts[count].ownerId = ownerIdDB;
+            strcpy(accounts[count].type, typeDB);
+            strcpy(accounts[count].name, nameDB);
+            accounts[count].balance = balanceDB;
         }
+        count++;
+    }
     // return false if no account was edited
     if (!found)
         return false;
+    fclose(accountsDB);
     // store the new data in the db
-    saveAccounts(accounts, numberOfAccounts);
+    accountsDB = fopen("../db/accounts.txt", "w");
+    for (int index = 0; index < count; index++)
+        fprintf(accountsDB, "%d %d %s %f %s\n", accounts[index].accountId, accounts[index].ownerId, accounts[index].name,
+                accounts[index].balance, accounts[index].type);
+    fclose(accountsDB);
     char formattedString[1000];
-    sprintf(
-            formattedString,
-            "The user with the id of %d edited the account with the id of %d with the new name of %s and type of %s.",
-            ownerId,
-            accountId,
-            newName,
-            newType
-            );
+    sprintf(formattedString, "The user with the id of %d edited the account with the id of %d with the new name"
+                             " of %s and type of %s.", ownerId, accountId, newName, newType);
     addActivity(formattedString);
     return true;
 }
