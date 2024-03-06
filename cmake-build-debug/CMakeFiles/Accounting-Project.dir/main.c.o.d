@@ -25,7 +25,9 @@ CMakeFiles/Accounting-Project.dir/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
  /home/sebifp/devStuff/repos/Accounting-Project/libs/users/users.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
+ /home/sebifp/devStuff/repos/Accounting-Project/libs/users/../models/models.h \
  /home/sebifp/devStuff/repos/Accounting-Project/libs/accounts/accounts.h \
+ /home/sebifp/devStuff/repos/Accounting-Project/libs/accounts/../models/models.h \
  /home/sebifp/devStuff/repos/Accounting-Project/libs/transactions/transactions.h \
  /home/sebifp/devStuff/repos/Accounting-Project/libs/reports/reports.h \
  /home/sebifp/devStuff/repos/Accounting-Project/libs/validation/validation.h \
