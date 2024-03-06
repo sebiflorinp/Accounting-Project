@@ -1,5 +1,2 @@
-1 sebifp aaaa
-2 AAAA aaaa
-3 asdff aaaaa
-4 Andreescu asdf
-5 Ionescuuul atfikm
+1 sebifp abcd
+2 ionescu abcd

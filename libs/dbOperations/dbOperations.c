@@ -23,9 +23,9 @@ void saveUsers(User* users, int numberOfUsers) {
     for (int i = 0; i < numberOfUsers; i++)
         fprintf(usersDB,
                 "%d %s %s\n",
-                users->id,
-                users->username,
-                users->password
+                users[i].id,
+                users[i].username,
+                users[i].password
                 );
     fclose(usersDB);
 }
