@@ -1,9 +1,9 @@
 CMakeFiles/Accounting-Project.dir/libs/users/users.c.o: \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/users/users.c \
+ /home/sebifp/ubb/oop/Accounting-Project/libs/users/users.c \
  /usr/include/stdc-predef.h \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/users/users.h \
+ /home/sebifp/ubb/oop/Accounting-Project/libs/users/users.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/users/../models/models.h \
+ /home/sebifp/ubb/oop/Accounting-Project/libs/users/../models/models.h \
  /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -55,7 +55,7 @@ CMakeFiles/Accounting-Project.dir/libs/users/users.c.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/users/../../libs/activityLog/activityLog.h \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/users/../../utils/utils.h \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/users/../dbOperations/dbOperations.h \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/users/../dbOperations/../models/models.h
+ /home/sebifp/ubb/oop/Accounting-Project/libs/users/../../libs/activityLog/activityLog.h \
+ /home/sebifp/ubb/oop/Accounting-Project/libs/users/../../utils/utils.h \
+ /home/sebifp/ubb/oop/Accounting-Project/libs/users/../dbOperations/dbOperations.h \
+ /home/sebifp/ubb/oop/Accounting-Project/libs/users/../dbOperations/../models/models.h

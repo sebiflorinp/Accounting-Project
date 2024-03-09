@@ -1,5 +1,5 @@
 CMakeFiles/Accounting-Project.dir/libs/importantUsers/importantUsers.c.o: \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/importantUsers/importantUsers.c \
+ /home/sebifp/ubb/oop/Accounting-Project/libs/importantUsers/importantUsers.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -26,7 +26,7 @@ CMakeFiles/Accounting-Project.dir/libs/importantUsers/importantUsers.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/importantUsers/importantUsers.h \
+ /home/sebifp/ubb/oop/Accounting-Project/libs/importantUsers/importantUsers.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/importantUsers/../models/models.h \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/importantUsers/../activityLog/activityLog.h
+ /home/sebifp/ubb/oop/Accounting-Project/libs/importantUsers/../models/models.h \
+ /home/sebifp/ubb/oop/Accounting-Project/libs/importantUsers/../activityLog/activityLog.h

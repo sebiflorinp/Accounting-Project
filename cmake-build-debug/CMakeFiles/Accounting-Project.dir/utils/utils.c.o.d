@@ -1,5 +1,5 @@
 CMakeFiles/Accounting-Project.dir/utils/utils.c.o: \
- /home/sebifp/devStuff/repos/Accounting-Project/utils/utils.c \
+ /home/sebifp/ubb/oop/Accounting-Project/utils/utils.c \
  /usr/include/stdc-predef.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -51,4 +51,4 @@ CMakeFiles/Accounting-Project.dir/utils/utils.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /home/sebifp/devStuff/repos/Accounting-Project/utils/utils.h
+ /home/sebifp/ubb/oop/Accounting-Project/utils/utils.h

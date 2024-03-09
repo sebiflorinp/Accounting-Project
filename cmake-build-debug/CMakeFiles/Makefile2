@@ -54,10 +54,10 @@ RM = /home/sebifp/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sebifp/devStuff/repos/Accounting-Project
+CMAKE_SOURCE_DIR = /home/sebifp/ubb/oop/Accounting-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug
+CMAKE_BINARY_DIR = /home/sebifp/ubb/oop/Accounting-Project/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/Accounting-Project.dir/clean
 CMakeFiles/Accounting-Project.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Accounting-Project.dir/build.make CMakeFiles/Accounting-Project.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Accounting-Project.dir/build.make CMakeFiles/Accounting-Project.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target Accounting-Project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sebifp/ubb/oop/Accounting-Project/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target Accounting-Project"
 .PHONY : CMakeFiles/Accounting-Project.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Accounting-Project.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sebifp/ubb/oop/Accounting-Project/cmake-build-debug/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Accounting-Project.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sebifp/ubb/oop/Accounting-Project/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Accounting-Project.dir/rule
 
 # Convenience name for target.

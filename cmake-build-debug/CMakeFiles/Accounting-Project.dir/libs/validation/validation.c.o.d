@@ -1,7 +1,7 @@
 CMakeFiles/Accounting-Project.dir/libs/validation/validation.c.o: \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/validation/validation.c \
+ /home/sebifp/ubb/oop/Accounting-Project/libs/validation/validation.c \
  /usr/include/stdc-predef.h \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/validation/validation.h \
+ /home/sebifp/ubb/oop/Accounting-Project/libs/validation/validation.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

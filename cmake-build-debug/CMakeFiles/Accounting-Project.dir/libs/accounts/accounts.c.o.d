@@ -1,12 +1,12 @@
 CMakeFiles/Accounting-Project.dir/libs/accounts/accounts.c.o: \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/accounts/accounts.c \
+ /home/sebifp/ubb/oop/Accounting-Project/libs/accounts/accounts.c \
  /usr/include/stdc-predef.h \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/accounts/accounts.h \
+ /home/sebifp/ubb/oop/Accounting-Project/libs/accounts/accounts.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/accounts/../models/models.h \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/accounts/../activityLog/activityLog.h \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/accounts/../dbOperations/dbOperations.h \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/accounts/../dbOperations/../models/models.h \
+ /home/sebifp/ubb/oop/Accounting-Project/libs/accounts/../models/models.h \
+ /home/sebifp/ubb/oop/Accounting-Project/libs/accounts/../activityLog/activityLog.h \
+ /home/sebifp/ubb/oop/Accounting-Project/libs/accounts/../dbOperations/dbOperations.h \
+ /home/sebifp/ubb/oop/Accounting-Project/libs/accounts/../dbOperations/../models/models.h \
  /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

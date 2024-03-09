@@ -1,5 +1,5 @@
 CMakeFiles/Accounting-Project.dir/libs/transactions/transactions.c.o: \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/transactions/transactions.c \
+ /home/sebifp/ubb/oop/Accounting-Project/libs/transactions/transactions.c \
  /usr/include/stdc-predef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -37,5 +37,5 @@ CMakeFiles/Accounting-Project.dir/libs/transactions/transactions.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/transactions/../models/models.h \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/transactions/../activityLog/activityLog.h
+ /home/sebifp/ubb/oop/Accounting-Project/libs/transactions/../models/models.h \
+ /home/sebifp/ubb/oop/Accounting-Project/libs/transactions/../activityLog/activityLog.h

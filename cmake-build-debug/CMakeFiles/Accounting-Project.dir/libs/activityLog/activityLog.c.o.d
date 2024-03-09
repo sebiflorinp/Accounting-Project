@@ -1,7 +1,7 @@
 CMakeFiles/Accounting-Project.dir/libs/activityLog/activityLog.c.o: \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/activityLog/activityLog.c \
+ /home/sebifp/ubb/oop/Accounting-Project/libs/activityLog/activityLog.c \
  /usr/include/stdc-predef.h \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/activityLog/activityLog.h \
+ /home/sebifp/ubb/oop/Accounting-Project/libs/activityLog/activityLog.h \
  /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

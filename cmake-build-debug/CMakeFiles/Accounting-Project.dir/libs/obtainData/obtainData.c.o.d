@@ -1,5 +1,5 @@
 CMakeFiles/Accounting-Project.dir/libs/obtainData/obtainData.c.o: \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/obtainData/obtainData.c \
+ /home/sebifp/ubb/oop/Accounting-Project/libs/obtainData/obtainData.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -52,8 +52,8 @@ CMakeFiles/Accounting-Project.dir/libs/obtainData/obtainData.c.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/obtainData/obtainData.h \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/obtainData/../validation/validation.h \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/obtainData/../../utils/utils.h \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/obtainData/../accounts/accounts.h \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/obtainData/../accounts/../models/models.h
+ /home/sebifp/ubb/oop/Accounting-Project/libs/obtainData/obtainData.h \
+ /home/sebifp/ubb/oop/Accounting-Project/libs/obtainData/../validation/validation.h \
+ /home/sebifp/ubb/oop/Accounting-Project/libs/obtainData/../../utils/utils.h \
+ /home/sebifp/ubb/oop/Accounting-Project/libs/obtainData/../accounts/accounts.h \
+ /home/sebifp/ubb/oop/Accounting-Project/libs/obtainData/../accounts/../models/models.h

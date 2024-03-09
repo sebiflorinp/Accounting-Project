@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug",
-		"source" : "/home/sebifp/devStuff/repos/Accounting-Project"
+		"build" : "/home/sebifp/ubb/oop/Accounting-Project/cmake-build-debug",
+		"source" : "/home/sebifp/ubb/oop/Accounting-Project"
 	},
 	"version" : 
 	{

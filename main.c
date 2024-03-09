@@ -196,6 +196,7 @@ int main() {
                                 displayAccounts(loggedInUser);
                                 accountId = obtainAccountId(loggedInUser);
                                 printf("Input the amount of money that will be deposited.\n");
+                                value = obtainValue();
                                 // deposit the money and notify the user
                                 deposit(loggedInUser, atoi(accountId), atof(value));
                                 printf("The deposit was made successfully!\n");
@@ -211,6 +212,7 @@ int main() {
                                 printf("Input the id of the account from which the money will be withdrawn.\n");
                                 displayAccounts(loggedInUser);
                                 accountId = obtainAccountId(loggedInUser);
+                                printf("Input the amount of money that will be withdrawn.\n");
                                 value = obtainValue();
                                 // withdraw the money and notify the user
                                 if (withdraw(loggedInUser, atoi(accountId), atof(value)))
@@ -234,24 +236,28 @@ int main() {
                                 accountId = obtainAccountId(loggedInUser);
                                 printf("Input the id of the account to which to money will be transferred.\n");
                                 accountIdToTransferTo = obtainAccountIdToTransferTo();
-                                printf("Input the amount of money that will be transferred.\n");
-                                value = obtainValue();
-                                printf("Do you want to transfer %f to the account with the id of %d? (y/n)\n",
-                                       atof(value), atoi(accountIdToTransferTo));
-                                confirmation = obtainConfirmation();
-                                // transfer the money and notify the user depending on the results
-                                if (strcmp(confirmation, "y") == 0)
-                                    if (transfer(loggedInUser, atoi(accountId), atoi(accountIdToTransferTo),
-                                                 atof(value)))
-                                        printf("The transfer was successful!\n");
+                                if (atoi(accountIdToTransferTo) == atoi(accountId)) {
+                                    printf("You cannot transfer money to the same account.\n");
+                                } else {
+                                    printf("Input the amount of money that will be transferred.\n");
+                                    value = obtainValue();
+                                    printf("Do you want to transfer %f to the account with the id of %d? (y/n)\n",
+                                        atof(value), atoi(accountIdToTransferTo));
+                                    confirmation = obtainConfirmation();
+                                    // transfer the money and notify the user depending on the results
+                                    if (strcmp(confirmation, "y") == 0)
+                                        if (transfer(loggedInUser, atoi(accountId), atoi(accountIdToTransferTo),
+                                                     atof(value)))
+                                            printf("The transfer was successful!\n");
+                                        else
+                                            printf("You cannot transfer more money than it is in your account.\n");
                                     else
-                                        printf("You cannot transfer money to the same account.\n");
-                                else
-                                    printf("The transfer was cancelled.\n");
-                                free(accountId);
-                                free(accountIdToTransferTo);
-                                free(value);
-                                free(confirmation);
+                                        printf("The transfer was cancelled.\n");
+                                    free(accountId);
+                                    free(accountIdToTransferTo);
+                                    free(value);
+                                    free(confirmation);
+                                }
                             }
                             break;
                             //make a payment feature

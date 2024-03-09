@@ -1,5 +1,5 @@
 CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.o: \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/dbOperations/dbOperations.c \
+ /home/sebifp/ubb/oop/Accounting-Project/libs/dbOperations/dbOperations.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -23,5 +23,5 @@ CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/dbOperations/dbOperations.h \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/dbOperations/../models/models.h
+ /home/sebifp/ubb/oop/Accounting-Project/libs/dbOperations/dbOperations.h \
+ /home/sebifp/ubb/oop/Accounting-Project/libs/dbOperations/../models/models.h

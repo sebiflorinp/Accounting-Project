@@ -1,5 +1,5 @@
 CMakeFiles/Accounting-Project.dir/libs/reports/reports.c.o: \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/reports/reports.c \
+ /home/sebifp/ubb/oop/Accounting-Project/libs/reports/reports.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -36,4 +36,4 @@ CMakeFiles/Accounting-Project.dir/libs/reports/reports.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/string.h /usr/include/strings.h \
- /home/sebifp/devStuff/repos/Accounting-Project/libs/reports/../activityLog/activityLog.h
+ /home/sebifp/ubb/oop/Accounting-Project/libs/reports/../activityLog/activityLog.h

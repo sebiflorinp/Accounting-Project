@@ -4,3 +4,78 @@ Year: 2024 Month: 3 Day: 6 Hour: 10 Minute: 23 Second: 29
 The user with the id of 2 the username ionescu and the encrypted password abcd was created.
 Year: 2024 Month: 3 Day: 6 Hour: 10 Minute: 24 Second: 29
 
+The user with the id of 3 the username andrei and the encrypted password abcd was created.
+Year: 2024 Month: 3 Day: 9 Hour: 19 Minute: 49 Second: 4
+
+The user with the id of 3 logged in.
+Year: 2024 Month: 3 Day: 9 Hour: 19 Minute: 49 Second: 11
+
+The user with the id of 1 has created the account with the id of 3, name of qwertyyy and type of 1.
+Year: 2024 Month: 3 Day: 9 Hour: 19 Minute: 49 Second: 18
+
+The user with the id of 3 logged in.
+Year: 2024 Month: 3 Day: 9 Hour: 19 Minute: 49 Second: 45
+
+The user with the id of 2 has created the account with the id of 3, name of asdd and type of 2.
+Year: 2024 Month: 3 Day: 9 Hour: 19 Minute: 49 Second: 51
+
+The user with the id of 3 has created the account with the id of 3, name of sdafdsf and type of 2.
+Year: 2024 Month: 3 Day: 9 Hour: 19 Minute: 49 Second: 54
+
+The user with the id of 3 deposited 0.000000 money in the account with the id of 1.
+Year: 2024 Month: 3 Day: 9 Hour: 19 Minute: 50 Second: 3
+
+The user with the id of 3 logged in.
+Year: 2024 Month: 3 Day: 9 Hour: 19 Minute: 50 Second: 52
+
+The user with the id of 3 deposited 12.000000 money in the account with the id of 1.
+Year: 2024 Month: 3 Day: 9 Hour: 19 Minute: 50 Second: 58
+
+The user with the id of 3 deposited 234.000000 money in the account with the id of 2.
+Year: 2024 Month: 3 Day: 9 Hour: 19 Minute: 51 Second: 3
+
+The user with the id of 3 deposited 111.000000 money in the account with the id of 3.
+Year: 2024 Month: 3 Day: 9 Hour: 19 Minute: 51 Second: 10
+
+The user with the id of 3 logged out.
+Year: 2024 Month: 3 Day: 9 Hour: 19 Minute: 51 Second: 13
+
+The user with the id of 3 logged in.
+Year: 2024 Month: 3 Day: 9 Hour: 19 Minute: 54 Second: 16
+
+The user with the id of 3 withdrawn 10.000000 money from the account with the id 2
+Year: 2024 Month: 3 Day: 9 Hour: 19 Minute: 54 Second: 31
+
+The user with the id of 3 withdrawn 10.000000 money from the account with the id 2
+Year: 2024 Month: 3 Day: 9 Hour: 19 Minute: 54 Second: 41
+
+The user with the id of 3 withdrawn 10.000000 money from the account with the id 3
+Year: 2024 Month: 3 Day: 9 Hour: 19 Minute: 54 Second: 46
+
+The user with the id of 3 logged out.
+Year: 2024 Month: 3 Day: 9 Hour: 19 Minute: 54 Second: 49
+
+The user with the id of 3 logged in.
+Year: 2024 Month: 3 Day: 9 Hour: 19 Minute: 55 Second: 42
+
+The user with the id of 3 transferred 10.000000 money from the account with the id of 1 to the account with the id of 2
+Year: 2024 Month: 3 Day: 9 Hour: 19 Minute: 55 Second: 53
+
+The user with the id of 3 transferred 200.000000 money from the account with the id of 2 to the account with the id of 3
+Year: 2024 Month: 3 Day: 9 Hour: 19 Minute: 56 Second: 5
+
+The user with the id of 3 logged out.
+Year: 2024 Month: 3 Day: 9 Hour: 19 Minute: 56 Second: 43
+
+The user with the id of 3 logged in.
+Year: 2024 Month: 3 Day: 9 Hour: 19 Minute: 58 Second: 20
+
+The user with the id of 3 logged in.
+Year: 2024 Month: 3 Day: 9 Hour: 19 Minute: 59 Second: 4
+
+The user with the id of 3 logged in.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 0 Second: 42
+
+The user with the id of 3 logged out.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 1 Second: 1
+

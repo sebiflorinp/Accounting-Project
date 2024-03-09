@@ -53,10 +53,10 @@ RM = /home/sebifp/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sebifp/devStuff/repos/Accounting-Project
+CMAKE_SOURCE_DIR = /home/sebifp/ubb/oop/Accounting-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug
+CMAKE_BINARY_DIR = /home/sebifp/ubb/oop/Accounting-Project/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Accounting-Project.dir/depend.make
@@ -70,158 +70,158 @@ include CMakeFiles/Accounting-Project.dir/progress.make
 include CMakeFiles/Accounting-Project.dir/flags.make
 
 CMakeFiles/Accounting-Project.dir/main.c.o: CMakeFiles/Accounting-Project.dir/flags.make
-CMakeFiles/Accounting-Project.dir/main.c.o: /home/sebifp/devStuff/repos/Accounting-Project/main.c
+CMakeFiles/Accounting-Project.dir/main.c.o: /home/sebifp/ubb/oop/Accounting-Project/main.c
 CMakeFiles/Accounting-Project.dir/main.c.o: CMakeFiles/Accounting-Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Accounting-Project.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Accounting-Project.dir/main.c.o -MF CMakeFiles/Accounting-Project.dir/main.c.o.d -o CMakeFiles/Accounting-Project.dir/main.c.o -c /home/sebifp/devStuff/repos/Accounting-Project/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sebifp/ubb/oop/Accounting-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Accounting-Project.dir/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Accounting-Project.dir/main.c.o -MF CMakeFiles/Accounting-Project.dir/main.c.o.d -o CMakeFiles/Accounting-Project.dir/main.c.o -c /home/sebifp/ubb/oop/Accounting-Project/main.c
 
 CMakeFiles/Accounting-Project.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Accounting-Project.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sebifp/devStuff/repos/Accounting-Project/main.c > CMakeFiles/Accounting-Project.dir/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sebifp/ubb/oop/Accounting-Project/main.c > CMakeFiles/Accounting-Project.dir/main.c.i
 
 CMakeFiles/Accounting-Project.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Accounting-Project.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sebifp/devStuff/repos/Accounting-Project/main.c -o CMakeFiles/Accounting-Project.dir/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sebifp/ubb/oop/Accounting-Project/main.c -o CMakeFiles/Accounting-Project.dir/main.c.s
 
 CMakeFiles/Accounting-Project.dir/libs/validation/validation.c.o: CMakeFiles/Accounting-Project.dir/flags.make
-CMakeFiles/Accounting-Project.dir/libs/validation/validation.c.o: /home/sebifp/devStuff/repos/Accounting-Project/libs/validation/validation.c
+CMakeFiles/Accounting-Project.dir/libs/validation/validation.c.o: /home/sebifp/ubb/oop/Accounting-Project/libs/validation/validation.c
 CMakeFiles/Accounting-Project.dir/libs/validation/validation.c.o: CMakeFiles/Accounting-Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Accounting-Project.dir/libs/validation/validation.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Accounting-Project.dir/libs/validation/validation.c.o -MF CMakeFiles/Accounting-Project.dir/libs/validation/validation.c.o.d -o CMakeFiles/Accounting-Project.dir/libs/validation/validation.c.o -c /home/sebifp/devStuff/repos/Accounting-Project/libs/validation/validation.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sebifp/ubb/oop/Accounting-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Accounting-Project.dir/libs/validation/validation.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Accounting-Project.dir/libs/validation/validation.c.o -MF CMakeFiles/Accounting-Project.dir/libs/validation/validation.c.o.d -o CMakeFiles/Accounting-Project.dir/libs/validation/validation.c.o -c /home/sebifp/ubb/oop/Accounting-Project/libs/validation/validation.c
 
 CMakeFiles/Accounting-Project.dir/libs/validation/validation.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Accounting-Project.dir/libs/validation/validation.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sebifp/devStuff/repos/Accounting-Project/libs/validation/validation.c > CMakeFiles/Accounting-Project.dir/libs/validation/validation.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sebifp/ubb/oop/Accounting-Project/libs/validation/validation.c > CMakeFiles/Accounting-Project.dir/libs/validation/validation.c.i
 
 CMakeFiles/Accounting-Project.dir/libs/validation/validation.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Accounting-Project.dir/libs/validation/validation.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sebifp/devStuff/repos/Accounting-Project/libs/validation/validation.c -o CMakeFiles/Accounting-Project.dir/libs/validation/validation.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sebifp/ubb/oop/Accounting-Project/libs/validation/validation.c -o CMakeFiles/Accounting-Project.dir/libs/validation/validation.c.s
 
 CMakeFiles/Accounting-Project.dir/libs/users/users.c.o: CMakeFiles/Accounting-Project.dir/flags.make
-CMakeFiles/Accounting-Project.dir/libs/users/users.c.o: /home/sebifp/devStuff/repos/Accounting-Project/libs/users/users.c
+CMakeFiles/Accounting-Project.dir/libs/users/users.c.o: /home/sebifp/ubb/oop/Accounting-Project/libs/users/users.c
 CMakeFiles/Accounting-Project.dir/libs/users/users.c.o: CMakeFiles/Accounting-Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Accounting-Project.dir/libs/users/users.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Accounting-Project.dir/libs/users/users.c.o -MF CMakeFiles/Accounting-Project.dir/libs/users/users.c.o.d -o CMakeFiles/Accounting-Project.dir/libs/users/users.c.o -c /home/sebifp/devStuff/repos/Accounting-Project/libs/users/users.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sebifp/ubb/oop/Accounting-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Accounting-Project.dir/libs/users/users.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Accounting-Project.dir/libs/users/users.c.o -MF CMakeFiles/Accounting-Project.dir/libs/users/users.c.o.d -o CMakeFiles/Accounting-Project.dir/libs/users/users.c.o -c /home/sebifp/ubb/oop/Accounting-Project/libs/users/users.c
 
 CMakeFiles/Accounting-Project.dir/libs/users/users.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Accounting-Project.dir/libs/users/users.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sebifp/devStuff/repos/Accounting-Project/libs/users/users.c > CMakeFiles/Accounting-Project.dir/libs/users/users.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sebifp/ubb/oop/Accounting-Project/libs/users/users.c > CMakeFiles/Accounting-Project.dir/libs/users/users.c.i
 
 CMakeFiles/Accounting-Project.dir/libs/users/users.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Accounting-Project.dir/libs/users/users.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sebifp/devStuff/repos/Accounting-Project/libs/users/users.c -o CMakeFiles/Accounting-Project.dir/libs/users/users.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sebifp/ubb/oop/Accounting-Project/libs/users/users.c -o CMakeFiles/Accounting-Project.dir/libs/users/users.c.s
 
 CMakeFiles/Accounting-Project.dir/libs/accounts/accounts.c.o: CMakeFiles/Accounting-Project.dir/flags.make
-CMakeFiles/Accounting-Project.dir/libs/accounts/accounts.c.o: /home/sebifp/devStuff/repos/Accounting-Project/libs/accounts/accounts.c
+CMakeFiles/Accounting-Project.dir/libs/accounts/accounts.c.o: /home/sebifp/ubb/oop/Accounting-Project/libs/accounts/accounts.c
 CMakeFiles/Accounting-Project.dir/libs/accounts/accounts.c.o: CMakeFiles/Accounting-Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Accounting-Project.dir/libs/accounts/accounts.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Accounting-Project.dir/libs/accounts/accounts.c.o -MF CMakeFiles/Accounting-Project.dir/libs/accounts/accounts.c.o.d -o CMakeFiles/Accounting-Project.dir/libs/accounts/accounts.c.o -c /home/sebifp/devStuff/repos/Accounting-Project/libs/accounts/accounts.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sebifp/ubb/oop/Accounting-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Accounting-Project.dir/libs/accounts/accounts.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Accounting-Project.dir/libs/accounts/accounts.c.o -MF CMakeFiles/Accounting-Project.dir/libs/accounts/accounts.c.o.d -o CMakeFiles/Accounting-Project.dir/libs/accounts/accounts.c.o -c /home/sebifp/ubb/oop/Accounting-Project/libs/accounts/accounts.c
 
 CMakeFiles/Accounting-Project.dir/libs/accounts/accounts.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Accounting-Project.dir/libs/accounts/accounts.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sebifp/devStuff/repos/Accounting-Project/libs/accounts/accounts.c > CMakeFiles/Accounting-Project.dir/libs/accounts/accounts.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sebifp/ubb/oop/Accounting-Project/libs/accounts/accounts.c > CMakeFiles/Accounting-Project.dir/libs/accounts/accounts.c.i
 
 CMakeFiles/Accounting-Project.dir/libs/accounts/accounts.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Accounting-Project.dir/libs/accounts/accounts.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sebifp/devStuff/repos/Accounting-Project/libs/accounts/accounts.c -o CMakeFiles/Accounting-Project.dir/libs/accounts/accounts.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sebifp/ubb/oop/Accounting-Project/libs/accounts/accounts.c -o CMakeFiles/Accounting-Project.dir/libs/accounts/accounts.c.s
 
 CMakeFiles/Accounting-Project.dir/libs/transactions/transactions.c.o: CMakeFiles/Accounting-Project.dir/flags.make
-CMakeFiles/Accounting-Project.dir/libs/transactions/transactions.c.o: /home/sebifp/devStuff/repos/Accounting-Project/libs/transactions/transactions.c
+CMakeFiles/Accounting-Project.dir/libs/transactions/transactions.c.o: /home/sebifp/ubb/oop/Accounting-Project/libs/transactions/transactions.c
 CMakeFiles/Accounting-Project.dir/libs/transactions/transactions.c.o: CMakeFiles/Accounting-Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Accounting-Project.dir/libs/transactions/transactions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Accounting-Project.dir/libs/transactions/transactions.c.o -MF CMakeFiles/Accounting-Project.dir/libs/transactions/transactions.c.o.d -o CMakeFiles/Accounting-Project.dir/libs/transactions/transactions.c.o -c /home/sebifp/devStuff/repos/Accounting-Project/libs/transactions/transactions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sebifp/ubb/oop/Accounting-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Accounting-Project.dir/libs/transactions/transactions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Accounting-Project.dir/libs/transactions/transactions.c.o -MF CMakeFiles/Accounting-Project.dir/libs/transactions/transactions.c.o.d -o CMakeFiles/Accounting-Project.dir/libs/transactions/transactions.c.o -c /home/sebifp/ubb/oop/Accounting-Project/libs/transactions/transactions.c
 
 CMakeFiles/Accounting-Project.dir/libs/transactions/transactions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Accounting-Project.dir/libs/transactions/transactions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sebifp/devStuff/repos/Accounting-Project/libs/transactions/transactions.c > CMakeFiles/Accounting-Project.dir/libs/transactions/transactions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sebifp/ubb/oop/Accounting-Project/libs/transactions/transactions.c > CMakeFiles/Accounting-Project.dir/libs/transactions/transactions.c.i
 
 CMakeFiles/Accounting-Project.dir/libs/transactions/transactions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Accounting-Project.dir/libs/transactions/transactions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sebifp/devStuff/repos/Accounting-Project/libs/transactions/transactions.c -o CMakeFiles/Accounting-Project.dir/libs/transactions/transactions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sebifp/ubb/oop/Accounting-Project/libs/transactions/transactions.c -o CMakeFiles/Accounting-Project.dir/libs/transactions/transactions.c.s
 
 CMakeFiles/Accounting-Project.dir/libs/reports/reports.c.o: CMakeFiles/Accounting-Project.dir/flags.make
-CMakeFiles/Accounting-Project.dir/libs/reports/reports.c.o: /home/sebifp/devStuff/repos/Accounting-Project/libs/reports/reports.c
+CMakeFiles/Accounting-Project.dir/libs/reports/reports.c.o: /home/sebifp/ubb/oop/Accounting-Project/libs/reports/reports.c
 CMakeFiles/Accounting-Project.dir/libs/reports/reports.c.o: CMakeFiles/Accounting-Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Accounting-Project.dir/libs/reports/reports.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Accounting-Project.dir/libs/reports/reports.c.o -MF CMakeFiles/Accounting-Project.dir/libs/reports/reports.c.o.d -o CMakeFiles/Accounting-Project.dir/libs/reports/reports.c.o -c /home/sebifp/devStuff/repos/Accounting-Project/libs/reports/reports.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sebifp/ubb/oop/Accounting-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Accounting-Project.dir/libs/reports/reports.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Accounting-Project.dir/libs/reports/reports.c.o -MF CMakeFiles/Accounting-Project.dir/libs/reports/reports.c.o.d -o CMakeFiles/Accounting-Project.dir/libs/reports/reports.c.o -c /home/sebifp/ubb/oop/Accounting-Project/libs/reports/reports.c
 
 CMakeFiles/Accounting-Project.dir/libs/reports/reports.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Accounting-Project.dir/libs/reports/reports.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sebifp/devStuff/repos/Accounting-Project/libs/reports/reports.c > CMakeFiles/Accounting-Project.dir/libs/reports/reports.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sebifp/ubb/oop/Accounting-Project/libs/reports/reports.c > CMakeFiles/Accounting-Project.dir/libs/reports/reports.c.i
 
 CMakeFiles/Accounting-Project.dir/libs/reports/reports.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Accounting-Project.dir/libs/reports/reports.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sebifp/devStuff/repos/Accounting-Project/libs/reports/reports.c -o CMakeFiles/Accounting-Project.dir/libs/reports/reports.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sebifp/ubb/oop/Accounting-Project/libs/reports/reports.c -o CMakeFiles/Accounting-Project.dir/libs/reports/reports.c.s
 
 CMakeFiles/Accounting-Project.dir/libs/importantUsers/importantUsers.c.o: CMakeFiles/Accounting-Project.dir/flags.make
-CMakeFiles/Accounting-Project.dir/libs/importantUsers/importantUsers.c.o: /home/sebifp/devStuff/repos/Accounting-Project/libs/importantUsers/importantUsers.c
+CMakeFiles/Accounting-Project.dir/libs/importantUsers/importantUsers.c.o: /home/sebifp/ubb/oop/Accounting-Project/libs/importantUsers/importantUsers.c
 CMakeFiles/Accounting-Project.dir/libs/importantUsers/importantUsers.c.o: CMakeFiles/Accounting-Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Accounting-Project.dir/libs/importantUsers/importantUsers.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Accounting-Project.dir/libs/importantUsers/importantUsers.c.o -MF CMakeFiles/Accounting-Project.dir/libs/importantUsers/importantUsers.c.o.d -o CMakeFiles/Accounting-Project.dir/libs/importantUsers/importantUsers.c.o -c /home/sebifp/devStuff/repos/Accounting-Project/libs/importantUsers/importantUsers.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sebifp/ubb/oop/Accounting-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Accounting-Project.dir/libs/importantUsers/importantUsers.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Accounting-Project.dir/libs/importantUsers/importantUsers.c.o -MF CMakeFiles/Accounting-Project.dir/libs/importantUsers/importantUsers.c.o.d -o CMakeFiles/Accounting-Project.dir/libs/importantUsers/importantUsers.c.o -c /home/sebifp/ubb/oop/Accounting-Project/libs/importantUsers/importantUsers.c
 
 CMakeFiles/Accounting-Project.dir/libs/importantUsers/importantUsers.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Accounting-Project.dir/libs/importantUsers/importantUsers.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sebifp/devStuff/repos/Accounting-Project/libs/importantUsers/importantUsers.c > CMakeFiles/Accounting-Project.dir/libs/importantUsers/importantUsers.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sebifp/ubb/oop/Accounting-Project/libs/importantUsers/importantUsers.c > CMakeFiles/Accounting-Project.dir/libs/importantUsers/importantUsers.c.i
 
 CMakeFiles/Accounting-Project.dir/libs/importantUsers/importantUsers.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Accounting-Project.dir/libs/importantUsers/importantUsers.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sebifp/devStuff/repos/Accounting-Project/libs/importantUsers/importantUsers.c -o CMakeFiles/Accounting-Project.dir/libs/importantUsers/importantUsers.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sebifp/ubb/oop/Accounting-Project/libs/importantUsers/importantUsers.c -o CMakeFiles/Accounting-Project.dir/libs/importantUsers/importantUsers.c.s
 
 CMakeFiles/Accounting-Project.dir/libs/activityLog/activityLog.c.o: CMakeFiles/Accounting-Project.dir/flags.make
-CMakeFiles/Accounting-Project.dir/libs/activityLog/activityLog.c.o: /home/sebifp/devStuff/repos/Accounting-Project/libs/activityLog/activityLog.c
+CMakeFiles/Accounting-Project.dir/libs/activityLog/activityLog.c.o: /home/sebifp/ubb/oop/Accounting-Project/libs/activityLog/activityLog.c
 CMakeFiles/Accounting-Project.dir/libs/activityLog/activityLog.c.o: CMakeFiles/Accounting-Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Accounting-Project.dir/libs/activityLog/activityLog.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Accounting-Project.dir/libs/activityLog/activityLog.c.o -MF CMakeFiles/Accounting-Project.dir/libs/activityLog/activityLog.c.o.d -o CMakeFiles/Accounting-Project.dir/libs/activityLog/activityLog.c.o -c /home/sebifp/devStuff/repos/Accounting-Project/libs/activityLog/activityLog.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sebifp/ubb/oop/Accounting-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Accounting-Project.dir/libs/activityLog/activityLog.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Accounting-Project.dir/libs/activityLog/activityLog.c.o -MF CMakeFiles/Accounting-Project.dir/libs/activityLog/activityLog.c.o.d -o CMakeFiles/Accounting-Project.dir/libs/activityLog/activityLog.c.o -c /home/sebifp/ubb/oop/Accounting-Project/libs/activityLog/activityLog.c
 
 CMakeFiles/Accounting-Project.dir/libs/activityLog/activityLog.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Accounting-Project.dir/libs/activityLog/activityLog.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sebifp/devStuff/repos/Accounting-Project/libs/activityLog/activityLog.c > CMakeFiles/Accounting-Project.dir/libs/activityLog/activityLog.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sebifp/ubb/oop/Accounting-Project/libs/activityLog/activityLog.c > CMakeFiles/Accounting-Project.dir/libs/activityLog/activityLog.c.i
 
 CMakeFiles/Accounting-Project.dir/libs/activityLog/activityLog.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Accounting-Project.dir/libs/activityLog/activityLog.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sebifp/devStuff/repos/Accounting-Project/libs/activityLog/activityLog.c -o CMakeFiles/Accounting-Project.dir/libs/activityLog/activityLog.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sebifp/ubb/oop/Accounting-Project/libs/activityLog/activityLog.c -o CMakeFiles/Accounting-Project.dir/libs/activityLog/activityLog.c.s
 
 CMakeFiles/Accounting-Project.dir/libs/obtainData/obtainData.c.o: CMakeFiles/Accounting-Project.dir/flags.make
-CMakeFiles/Accounting-Project.dir/libs/obtainData/obtainData.c.o: /home/sebifp/devStuff/repos/Accounting-Project/libs/obtainData/obtainData.c
+CMakeFiles/Accounting-Project.dir/libs/obtainData/obtainData.c.o: /home/sebifp/ubb/oop/Accounting-Project/libs/obtainData/obtainData.c
 CMakeFiles/Accounting-Project.dir/libs/obtainData/obtainData.c.o: CMakeFiles/Accounting-Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Accounting-Project.dir/libs/obtainData/obtainData.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Accounting-Project.dir/libs/obtainData/obtainData.c.o -MF CMakeFiles/Accounting-Project.dir/libs/obtainData/obtainData.c.o.d -o CMakeFiles/Accounting-Project.dir/libs/obtainData/obtainData.c.o -c /home/sebifp/devStuff/repos/Accounting-Project/libs/obtainData/obtainData.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sebifp/ubb/oop/Accounting-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Accounting-Project.dir/libs/obtainData/obtainData.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Accounting-Project.dir/libs/obtainData/obtainData.c.o -MF CMakeFiles/Accounting-Project.dir/libs/obtainData/obtainData.c.o.d -o CMakeFiles/Accounting-Project.dir/libs/obtainData/obtainData.c.o -c /home/sebifp/ubb/oop/Accounting-Project/libs/obtainData/obtainData.c
 
 CMakeFiles/Accounting-Project.dir/libs/obtainData/obtainData.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Accounting-Project.dir/libs/obtainData/obtainData.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sebifp/devStuff/repos/Accounting-Project/libs/obtainData/obtainData.c > CMakeFiles/Accounting-Project.dir/libs/obtainData/obtainData.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sebifp/ubb/oop/Accounting-Project/libs/obtainData/obtainData.c > CMakeFiles/Accounting-Project.dir/libs/obtainData/obtainData.c.i
 
 CMakeFiles/Accounting-Project.dir/libs/obtainData/obtainData.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Accounting-Project.dir/libs/obtainData/obtainData.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sebifp/devStuff/repos/Accounting-Project/libs/obtainData/obtainData.c -o CMakeFiles/Accounting-Project.dir/libs/obtainData/obtainData.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sebifp/ubb/oop/Accounting-Project/libs/obtainData/obtainData.c -o CMakeFiles/Accounting-Project.dir/libs/obtainData/obtainData.c.s
 
 CMakeFiles/Accounting-Project.dir/utils/utils.c.o: CMakeFiles/Accounting-Project.dir/flags.make
-CMakeFiles/Accounting-Project.dir/utils/utils.c.o: /home/sebifp/devStuff/repos/Accounting-Project/utils/utils.c
+CMakeFiles/Accounting-Project.dir/utils/utils.c.o: /home/sebifp/ubb/oop/Accounting-Project/utils/utils.c
 CMakeFiles/Accounting-Project.dir/utils/utils.c.o: CMakeFiles/Accounting-Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Accounting-Project.dir/utils/utils.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Accounting-Project.dir/utils/utils.c.o -MF CMakeFiles/Accounting-Project.dir/utils/utils.c.o.d -o CMakeFiles/Accounting-Project.dir/utils/utils.c.o -c /home/sebifp/devStuff/repos/Accounting-Project/utils/utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sebifp/ubb/oop/Accounting-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Accounting-Project.dir/utils/utils.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Accounting-Project.dir/utils/utils.c.o -MF CMakeFiles/Accounting-Project.dir/utils/utils.c.o.d -o CMakeFiles/Accounting-Project.dir/utils/utils.c.o -c /home/sebifp/ubb/oop/Accounting-Project/utils/utils.c
 
 CMakeFiles/Accounting-Project.dir/utils/utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Accounting-Project.dir/utils/utils.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sebifp/devStuff/repos/Accounting-Project/utils/utils.c > CMakeFiles/Accounting-Project.dir/utils/utils.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sebifp/ubb/oop/Accounting-Project/utils/utils.c > CMakeFiles/Accounting-Project.dir/utils/utils.c.i
 
 CMakeFiles/Accounting-Project.dir/utils/utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Accounting-Project.dir/utils/utils.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sebifp/devStuff/repos/Accounting-Project/utils/utils.c -o CMakeFiles/Accounting-Project.dir/utils/utils.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sebifp/ubb/oop/Accounting-Project/utils/utils.c -o CMakeFiles/Accounting-Project.dir/utils/utils.c.s
 
 CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.o: CMakeFiles/Accounting-Project.dir/flags.make
-CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.o: /home/sebifp/devStuff/repos/Accounting-Project/libs/dbOperations/dbOperations.c
+CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.o: /home/sebifp/ubb/oop/Accounting-Project/libs/dbOperations/dbOperations.c
 CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.o: CMakeFiles/Accounting-Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.o -MF CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.o.d -o CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.o -c /home/sebifp/devStuff/repos/Accounting-Project/libs/dbOperations/dbOperations.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sebifp/ubb/oop/Accounting-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.o -MF CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.o.d -o CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.o -c /home/sebifp/ubb/oop/Accounting-Project/libs/dbOperations/dbOperations.c
 
 CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sebifp/devStuff/repos/Accounting-Project/libs/dbOperations/dbOperations.c > CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sebifp/ubb/oop/Accounting-Project/libs/dbOperations/dbOperations.c > CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.i
 
 CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sebifp/devStuff/repos/Accounting-Project/libs/dbOperations/dbOperations.c -o CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sebifp/ubb/oop/Accounting-Project/libs/dbOperations/dbOperations.c -o CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.s
 
 # Object files for target Accounting-Project
 Accounting__Project_OBJECTS = \
@@ -253,7 +253,7 @@ Accounting-Project: CMakeFiles/Accounting-Project.dir/utils/utils.c.o
 Accounting-Project: CMakeFiles/Accounting-Project.dir/libs/dbOperations/dbOperations.c.o
 Accounting-Project: CMakeFiles/Accounting-Project.dir/build.make
 Accounting-Project: CMakeFiles/Accounting-Project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable Accounting-Project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/sebifp/ubb/oop/Accounting-Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable Accounting-Project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Accounting-Project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -265,6 +265,6 @@ CMakeFiles/Accounting-Project.dir/clean:
 .PHONY : CMakeFiles/Accounting-Project.dir/clean
 
 CMakeFiles/Accounting-Project.dir/depend:
-	cd /home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sebifp/devStuff/repos/Accounting-Project /home/sebifp/devStuff/repos/Accounting-Project /home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug /home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug /home/sebifp/devStuff/repos/Accounting-Project/cmake-build-debug/CMakeFiles/Accounting-Project.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/sebifp/ubb/oop/Accounting-Project/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sebifp/ubb/oop/Accounting-Project /home/sebifp/ubb/oop/Accounting-Project /home/sebifp/ubb/oop/Accounting-Project/cmake-build-debug /home/sebifp/ubb/oop/Accounting-Project/cmake-build-debug /home/sebifp/ubb/oop/Accounting-Project/cmake-build-debug/CMakeFiles/Accounting-Project.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Accounting-Project.dir/depend
 
