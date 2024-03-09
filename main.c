@@ -38,6 +38,7 @@ int main() {
     int numberOfImportantUsers = loadImportantUsers(importantUsers);
     importantUsers = realloc(importantUsers, numberOfImportantUsers);
     // application loop
+    printf("In order to use this application you need to create an account and login.\n");
     while (running) {
         // print login menu instruction
         displayLoginInstructions();
@@ -92,17 +93,22 @@ int main() {
                         loggedInUser = 0;
                         break;
                 }
+                printf("Press ENTER key to continue\n");
+                getchar();
             } else {
                 printf("The was not a valid action, please choose a valid one!\n");
+                printf("Press ENTER key to continue\n");
+                getchar();
             }
 
         }
         // print instructions
+        printf("In order to interact with this application you need to choose one of the following commands:\n");
         if (running) {
             printf("In this application you can manage different financial accounts.\n");
-            displayApplicationInstructions();
             // application menu loop
             while (loggedIn && running) {
+                displayApplicationInstructions();
                 // needed variables
                 char *accountName;
                 char *accountType;
@@ -260,30 +266,8 @@ int main() {
                                 }
                             }
                             break;
-                            //make a payment feature
-                        case 7:
-                            // if the user does not have any account display a special message
-                            if (returnNumberOfAccounts(loggedInUser) == 0)
-                                printf("In order to withdraw money from an account you need to create one, please "
-                                       "create one before trying to withdraw money from it.\n");
-                            else {
-                                printf("Input the id of the account from which the payment will be made.\n");
-                                displayAccounts(loggedInUser);
-                                accountId = obtainAccountId(loggedInUser);
-                                printf("Input the amount of money that will be used\n");
-                                value = obtainValue();
-                                // make the payment and notify the user
-                                if (payment(loggedInUser, atoi(accountId), atof(value)))
-                                    printf("The payment was made successfully!\n");
-                                else
-                                    printf("The payment was unsuccessful, you can not use more money then are"
-                                           " in the account.\n");
-                                free(accountId);
-                                free(value);
-                            }
-                            break;
                             // display statements
-                        case 8:
+                        case 7:
                             printf("Input the id of the account:\n");
                             displayAccounts(loggedInUser);
                             accountId = obtainAccountId(loggedInUser);
@@ -293,13 +277,13 @@ int main() {
                             free(accountId);
                             break;
                             // print balances feature
-                        case 9:
+                        case 8:
                             // print balances
                             printf("Balances:\n");
                             balances(loggedInUser);
                             break;
                             // display transactions
-                        case 10:
+                        case 9:
                             printf("Input the id of the account:\n");
                             displayAccounts(loggedInUser);
                             accountId = obtainAccountId(loggedInUser);
@@ -308,7 +292,7 @@ int main() {
                             free(accountId);
                             break;
                             //display the expenses of an account
-                        case 11:
+                        case 10:
                             printf("Input the id of the account:\n");
                             displayAccounts(loggedInUser);
                             accountId = obtainAccountId(loggedInUser);
@@ -317,7 +301,7 @@ int main() {
                             free(accountId);
                             break;
                             // adding important user
-                        case 12:
+                        case 11:
                             validUserId = false;
                             validDescription = false;
                             printf("Input the id of the important user.\n");
@@ -356,7 +340,7 @@ int main() {
                                 printf("The chosen user is already in the list of important users.\n");
                             break;
                             // edit important user
-                        case 13:
+                        case 12:
                             // if the logged in user doesn't have any important users return a message
                             if (!checkIfUserHasImportantUsers(loggedInUser))
                                 printf("In order to edit an important user you need to add one, please add one before"
@@ -396,7 +380,7 @@ int main() {
                             }
                             break;
                             // delete important user
-                        case 14:
+                        case 13:
                             if (!checkIfUserHasImportantUsers(loggedInUser))
                                 printf("In order to delete an important user you need to add one, please add one before"
                                        " trying to delete it.\n");
@@ -437,18 +421,22 @@ int main() {
                             }
                             break;
                             // display important users
-                        case 15:
+                        case 14:
                             displayImportantUsers(loggedInUser);
                             break;
                             // log out
-                        case 16:
+                        case 15:
                             logOutUser(loggedInUser);
                             loggedInUser = 0;
                             loggedIn = false;
                             break;
                     }
+                    printf("Press ENTER key to continue\n");
+                    getchar();
                 } else {
                     printf("The was not a valid action, please choose a valid one!\n");
+                    printf("Press ENTER key to continue\n");
+                    getchar();
                 }
             }
         }

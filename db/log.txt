@@ -79,3 +79,42 @@ Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 0 Second: 42
 The user with the id of 3 logged out.
 Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 1 Second: 1
 
+The user with the id of 3 logged in.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 6 Second: 55
+
+The user with the id of 3 deposited 100.000000 money in the account with the id of 2.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 7 Second: 0
+
+The user with the id of 3 logged in.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 8 Second: 1
+
+The user with the id of 3 logged out.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 8 Second: 4
+
+The user with the id of 3 logged in.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 8 Second: 54
+
+The user with the id of 3 logged out.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 8 Second: 56
+
+The user with the id of 3 logged in.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 9 Second: 10
+
+The user with the id of 1 logged in.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 12 Second: 20
+
+The user with the id of 1 added the user with the id of 3 on the list of important users with the description of Bussiness colleuage.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 12 Second: 47
+
+The important users of the user with the id of 1 were displayed.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 13 Second: 27
+
+The user with the id of 1 logged in.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 15 Second: 30
+
+The user with the id of 1 logged out.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 15 Second: 37
+
+The user with the id of 1 logged in.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 18 Second: 14
+

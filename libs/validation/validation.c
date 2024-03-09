@@ -70,7 +70,7 @@ bool validateActionMenu(char* action) {
         if (!('0' <= action[index] && action[index] <= '9'))
             return false;
     // Check if action if between 1 and 20
-    if (!(1 <= atoi(action) && atoi(action) <= 20))
+    if (!(1 <= atoi(action) && atoi(action) <= 15))
         return false;
     // If the id is made only of numbers return true
     return true;
