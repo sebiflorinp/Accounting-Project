@@ -17,4 +17,8 @@ char* obtainValue();
 
 char* obtainAccountIdToTransferTo();
 
+char* obtainImportantUserId(int loggedInUser);
+
+char* obtainImportantUserDescription();
+
 #endif //ACCOUNT_PROJECT_OBTAINDATA_H

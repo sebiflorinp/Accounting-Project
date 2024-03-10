@@ -182,6 +182,9 @@ CMakeFiles/Accounting-Project.dir/libs/obtainData/obtainData.c.o
  /home/sebifp/ubb/oop/Accounting-Project/utils/utils.h
  /home/sebifp/ubb/oop/Accounting-Project/libs/models/models.h
  /home/sebifp/ubb/oop/Accounting-Project/libs/accounts/accounts.h
+ /home/sebifp/ubb/oop/Accounting-Project/libs/importantUsers/importantUsers.h
+ /home/sebifp/ubb/oop/Accounting-Project/libs/models/models.h
+ /home/sebifp/ubb/oop/Accounting-Project/libs/users/users.h
  /home/sebifp/ubb/oop/Accounting-Project/libs/validation/validation.h
  /home/sebifp/ubb/oop/Accounting-Project/libs/obtainData/obtainData.h
  /usr/include/alloca.h

@@ -292,3 +292,282 @@ Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 58 Second: 25
 The user with the id of 1 logged out.
 Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 58 Second: 27
 
+The user with the id of 4 the username alexandru and the encrypted password abcd was created.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 4 Second: 24
+
+The user with the id of 4 logged in.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 4 Second: 33
+
+The user with the id of 4 has created the account with the id of 4, name of asfdsgfd and type of Checking.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 4 Second: 39
+
+The user with the id of 4 deleted the account with the id of 4.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 4 Second: 46
+
+The user with the id of 4 has created the account with the id of 4, name of fdsfsdfds and type of Checking.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 4 Second: 55
+
+The user with the id of 4 has created the account with the id of 5, name of retreyt and type of Credits.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 5 Second: 0
+
+The user with the id of 4 edited the account with the id of 4 with the new name of rerwfew and type of Credits.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 5 Second: 13
+
+The user with the id of 4 deposited 12.000000 money in the account with the id of 4.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 5 Second: 20
+
+The user with the id of 4 withdrawn 10.000000 money from the account with the id 4
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 5 Second: 28
+
+The user with the id of 4 transferred 1.000000 money from the account with the id of 4 to the account with the id of 5
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 5 Second: 43
+
+The statements of the account with the id of 4 were requested.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 6 Second: 5
+
+The user with the id of 4 logged out.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 6 Second: 16
+
+The user with the id of 1 logged in.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 21 Second: 8
+
+The statements of the account with the id of 2 were requested.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 21 Second: 13
+
+The user with the id of 1 logged out.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 21 Second: 54
+
+The user with the id of 4 logged in.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 21 Second: 59
+
+The statements of the account with the id of 4 were requested.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 22 Second: 7
+
+The user with the id of 1 logged in.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 22 Second: 39
+
+The statements of the account with the id of 2 were requested.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 22 Second: 45
+
+The user with the id of 1 has requested their balances.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 22 Second: 57
+
+The statements of the account with the id of 2 were requested.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 23 Second: 20
+
+The user with the id of 4 logged in.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 25 Second: 18
+
+The expenses of the account with the id of 4 were requested.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 25 Second: 26
+
+The statements of the account with the id of 4 were requested.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 25 Second: 32
+
+The user with the id of 4 logged in.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 34 Second: 51
+
+The statements of the account with the id of 4 were requested.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 34 Second: 56
+
+The user with the id of 4 has requested their balances.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 35 Second: 4
+
+The statements of the account with the id of 4 were requested.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 35 Second: 9
+
+The expenses of the account with the id of 4 were requested.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 35 Second: 16
+
+The user with the id of 4 logged in.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 37 Second: 29
+
+The expenses of the account with the id of 4 were requested.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 37 Second: 35
+
+The user with the id of 4 logged out.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 37 Second: 41
+
+The user with the id of 2 logged in.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 39 Second: 4
+
+The user with the id of 2 has requested their balances.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 39 Second: 8
+
+The user with the id of 2 has created the account with the id of 6, name of asdfdgh and type of Savings.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 39 Second: 16
+
+The statements of the account with the id of 6 were requested.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 39 Second: 23
+
+The user with the id of 2 logged in.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 42 Second: 46
+
+The statements of the account with the id of 6 were requested.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 43 Second: 3
+
+The user with the id of 2 has requested their balances.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 43 Second: 9
+
+The statements of the account with the id of 6 were requested.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 43 Second: 18
+
+The expenses of the account with the id of 6 were requested.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 43 Second: 27
+
+The user with the id of 2 added the user with the id of 1 on the list of important users with the description of Cool guy.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 43 Second: 48
+
+The important users of the user with the id of 2 were displayed.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 43 Second: 53
+
+The user with the id of 4 logged in.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 46 Second: 6
+
+The important users of the user with the id of 4 were displayed.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 46 Second: 11
+
+The user with the id of 4 logged out.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 46 Second: 15
+
+The user with the id of 2 logged in.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 46 Second: 23
+
+The important users of the user with the id of 2 were displayed.
+Year: 2024 Month: 3 Day: 10 Hour: 11 Minute: 46 Second: 30
+
+The user with the id of 4 logged in.
+Year: 2024 Month: 3 Day: 10 Hour: 12 Minute: 4 Second: 3
+
+The important users of the user with the id of 4 were displayed.
+Year: 2024 Month: 3 Day: 10 Hour: 12 Minute: 4 Second: 8
+
+The user with the id of 4 added the user with the id of 2 on the list of important users with the description of Cool.
+Year: 2024 Month: 3 Day: 10 Hour: 12 Minute: 4 Second: 17
+
+The important users of the user with the id of 4 were displayed.
+Year: 2024 Month: 3 Day: 10 Hour: 12 Minute: 4 Second: 20
+
+The user with the id of 1 logged in.
+Year: 2024 Month: 3 Day: 10 Hour: 12 Minute: 5 Second: 59
+
+The important users of the user with the id of 1 were displayed.
+Year: 2024 Month: 3 Day: 10 Hour: 12 Minute: 6 Second: 1
+
+The user with the id of 1 added the user with the id of 2 on the list of important users with the description of Cool.
+Year: 2024 Month: 3 Day: 10 Hour: 12 Minute: 6 Second: 8
+
+The important users of the user with the id of 1 were displayed.
+Year: 2024 Month: 3 Day: 10 Hour: 12 Minute: 6 Second: 14
+
+The important users of the user with the id of 1 were displayed.
+Year: 2024 Month: 3 Day: 10 Hour: 12 Minute: 6 Second: 18
+
+The user with the id of 1 added the user with the id of 3 on the list of important users with the description of dk this guy.
+Year: 2024 Month: 3 Day: 10 Hour: 12 Minute: 6 Second: 41
+
+The important users of the user with the id of 1 were displayed.
+Year: 2024 Month: 3 Day: 10 Hour: 12 Minute: 6 Second: 43
+
+The important users of the user with the id of 1 were displayed.
+Year: 2024 Month: 3 Day: 10 Hour: 12 Minute: 7 Second: 1
+
+The user with the id of 1 logged in.
+Year: 2024 Month: 3 Day: 10 Hour: 12 Minute: 9 Second: 20
+
+The important users of the user with the id of 1 were displayed.
+Year: 2024 Month: 3 Day: 10 Hour: 12 Minute: 9 Second: 22
+
+The important users of the user with the id of 1 were displayed.
+Year: 2024 Month: 3 Day: 10 Hour: 12 Minute: 9 Second: 26
+
+The user with the id of 1 logged in.
+Year: 2024 Month: 3 Day: 10 Hour: 12 Minute: 9 Second: 48
+
+The important users of the user with the id of 1 were displayed.
+Year: 2024 Month: 3 Day: 10 Hour: 12 Minute: 9 Second: 51
+
+The user with the id of 1 logged in.
+Year: 2024 Month: 3 Day: 10 Hour: 17 Minute: 30 Second: 8
+
+The important users of the user with the id of 1 were displayed.
+Year: 2024 Month: 3 Day: 10 Hour: 17 Minute: 30 Second: 14
+
+The important users of the user with the id of 1 were displayed.
+Year: 2024 Month: 3 Day: 10 Hour: 17 Minute: 30 Second: 24
+
+The user with the id of 1 deleted the user with the id of 3 from the list of important users.
+Year: 2024 Month: 3 Day: 10 Hour: 17 Minute: 30 Second: 27
+
+The user with the id of 1 logged out.
+Year: 2024 Month: 3 Day: 10 Hour: 17 Minute: 30 Second: 29
+
+The user with the id of 1 logged in.
+Year: 2024 Month: 3 Day: 10 Hour: 17 Minute: 30 Second: 47
+
+The important users of the user with the id of 1 were displayed.
+Year: 2024 Month: 3 Day: 10 Hour: 17 Minute: 30 Second: 51
+
+The important users of the user with the id of 1 were displayed.
+Year: 2024 Month: 3 Day: 10 Hour: 17 Minute: 30 Second: 51
+
+The important users of the user with the id of 1 were displayed.
+Year: 2024 Month: 3 Day: 10 Hour: 17 Minute: 31 Second: 8
+
+The user with the id of 1 logged out.
+Year: 2024 Month: 3 Day: 10 Hour: 17 Minute: 31 Second: 17
+
+The user with the id of 1 logged in.
+Year: 2024 Month: 3 Day: 10 Hour: 17 Minute: 33 Second: 39
+
+The important users of the user with the id of 1 were displayed.
+Year: 2024 Month: 3 Day: 10 Hour: 17 Minute: 33 Second: 43
+
+The user with the id of 1 changed the description of the important user with the id of 2 to ice guy
+Year: 2024 Month: 3 Day: 10 Hour: 17 Minute: 33 Second: 47
+
+The important users of the user with the id of 1 were displayed.
+Year: 2024 Month: 3 Day: 10 Hour: 17 Minute: 33 Second: 50
+
+The user with the id of 1 logged in.
+Year: 2024 Month: 3 Day: 10 Hour: 17 Minute: 35 Second: 50
+
+The important users of the user with the id of 1 were displayed.
+Year: 2024 Month: 3 Day: 10 Hour: 17 Minute: 35 Second: 53
+
+The important users of the user with the id of 1 were displayed.
+Year: 2024 Month: 3 Day: 10 Hour: 17 Minute: 36 Second: 0
+
+The user with the id of 1 changed the description of the important user with the id of 2 to Coolll guy
+Year: 2024 Month: 3 Day: 10 Hour: 17 Minute: 36 Second: 5
+
+The important users of the user with the id of 1 were displayed.
+Year: 2024 Month: 3 Day: 10 Hour: 17 Minute: 36 Second: 7
+
+The user with the id of 1 added the user with the id of 3 on the list of important users with the description of Another cool guy.
+Year: 2024 Month: 3 Day: 10 Hour: 17 Minute: 36 Second: 40
+
+The important users of the user with the id of 1 were displayed.
+Year: 2024 Month: 3 Day: 10 Hour: 17 Minute: 36 Second: 43
+
+The user with the id of 1 has created the account with the id of 7, name of fsfdf fdsfds and type of Savings.
+Year: 2024 Month: 3 Day: 10 Hour: 17 Minute: 36 Second: 57
+
+The user with the id of 1 deposited 12.000000 money in the account with the id of 2.
+Year: 2024 Month: 3 Day: 10 Hour: 17 Minute: 37 Second: 12
+
+The user with the id of 1 has created the account with the id of 7, name of qaaqqa aassa and type of Savings.
+Year: 2024 Month: 3 Day: 10 Hour: 17 Minute: 37 Second: 20
+
+The user with the id of 1 logged in.
+Year: 2024 Month: 3 Day: 10 Hour: 17 Minute: 37 Second: 50
+
+The user with the id of 1 deposited 11.000000 money in the account with the id of 7.
+Year: 2024 Month: 3 Day: 10 Hour: 17 Minute: 37 Second: 57
+
+The user with the id of 1 withdrawn 1.000000 money from the account with the id 7
+Year: 2024 Month: 3 Day: 10 Hour: 17 Minute: 38 Second: 3
+
+The user with the id of 1 logged out.
+Year: 2024 Month: 3 Day: 10 Hour: 17 Minute: 38 Second: 6
+

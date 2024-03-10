@@ -6,6 +6,8 @@
 #include "../validation/validation.h"
 #include "../../utils/utils.h"
 #include "../accounts/accounts.h"
+#include "../importantUsers/importantUsers.h"
+#include "../users/users.h"
 
 char* obtainUsername() {
     bool validUsername = false;
@@ -147,4 +149,42 @@ char* obtainAccountIdToTransferTo() {
         }
     }
     return accountIdToTransferTo;
+}
+
+char* obtainImportantUserId(int loggedInUser) {
+    bool validUserId = false;
+    char *userId = malloc(20 * sizeof(char ));
+    // choosing an account loop
+        while (!validUserId) {
+            fgets(userId, 20, stdin);
+            removeTrailingNewLine(userId);
+            // if the id is invalid (as in it is not a valid integer) display a special message
+            if (!validateId(userId))
+                printf("The input account id is invalid, please input a valid one.\n");
+            else {
+                // if the user id does not exist display a message
+                validUserId = checkIfUserExists(atoi(userId));
+                if (!validUserId)
+                    printf("The input id does not belong to any user, please input an id that belongs to an user.\n");
+                // if the id of the user that is logged in is input display a message
+                if (atoi(userId) == loggedInUser) {
+                    printf("The input id belongs to your account, please input another id.\n");
+                    validUserId = false;
+                }
+            }
+        }
+    return userId;
+}
+
+char* obtainImportantUserDescription() {
+    bool validDescription = false;
+    char* description = malloc(300 * sizeof(char));
+     while (!validDescription) {
+         fgets(description, 300, stdin);
+         removeTrailingNewLine(description);
+         validDescription = validateDescription(description);
+         if (!validDescription)
+             printf("The input description is invalid, please input another one.\n");
+     }
+     return description;
 }

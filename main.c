@@ -40,11 +40,10 @@ int main() {
     // application loop
     printf("In order to use this application you need to create an account and login.\n");
     while (running) {
-        // print login menu instruction
-        displayLoginInstructions();
         // log in menu loop
         while (!loggedIn && running) {
             // the user chooses an action
+            displayLoginInstructions();
             printf("Select an action:\n");
             action = malloc(sizeof(char) * 10);
             fgets(action, 10, stdin);
@@ -117,7 +116,9 @@ int main() {
                 char *confirmation;
                 char *value;
                 char *accountIdToTransferTo;
-                char userId[200], description[2000], importantUsername[2000];
+                char * userId;
+                char* description;
+                char importantUsername[2000];
                 bool validAccountName = false, validAccountType = false, validValue = false, validDescription = false, validImportantUsername = false;
                 bool validAccountId = false, validConfirmation = false, validAccountIdToTransfer = false, validUserId = false;
                 printf("Select an action:\n");
@@ -295,42 +296,19 @@ int main() {
                             break;
                             // adding important user
                         case 11:
-                            validUserId = false;
-                            validDescription = false;
                             printf("Input the id of the important user.\n");
                             // get user id
-                            while (!validUserId) {
-                                scanf("%s", userId);
-                                // if the id is invalid (as in it is not a valid integer) display a special message
-                                if (!validateId(userId))
-                                    printf("The input account id is invalid, please input a valid one.\n");
-                                else {
-                                    // if the user id does not exist display a message
-                                    validUserId = checkIfUserExists(atoi(userId));
-                                    if (!validUserId)
-                                        printf("The input id does not belong to any user, please input an id that belongs to an user.\n");
-                                    // if the id of the user that is logged in is input display a message
-                                    if (atoi(userId) == loggedInUser) {
-                                        printf("The input id belongs to your account, please input another id.\n");
-                                        validUserId = false;
-                                    }
-                                }
-                            }
+                            userId = obtainImportantUserId(loggedInUser);
                             // get description
                             printf("Input a description for the important user.\n");
-                            while (!validDescription) {
-                                getchar();
-                                fgets(description, 2000, stdin);
-                                description[strlen(description) - 1] = 0;
-                                validDescription = validateDescription(description);
-                                if (!validDescription)
-                                    printf("The input description is not valid, please input a valid one.\n");
-                            }
+                            description = obtainImportantUserDescription();
                             // add important user
                             if (addUser(loggedInUser, atoi(userId), description))
                                 printf("The user was added successfully in the list of important users!\n");
                             else
                                 printf("The chosen user is already in the list of important users.\n");
+                            free(userId);
+                            free(description);
                             break;
                             // edit important user
                         case 12:
@@ -340,36 +318,18 @@ int main() {
                                        " trying to edit it.\n");
                             else {
                                 // prepare variables for input loops
-                                validUserId = false;
                                 validDescription = false;
                                 printf("Input the id of the important user that will be edited:\n");
                                 displayImportantUsers(loggedInUser);
                                 // choosing a user loop
-                                while (!validUserId) {
-                                    scanf("%s", userId);
-                                    // if the id is invalid (as in it is not a valid integer) display a special message
-                                    if (!validateId(userId))
-                                        printf("The input user id is invalid, please input a valid one.\n");
-                                    else {
-                                        // if the user id was not chosen from the displayed list print a message
-                                        validUserId = checkImportantUser(loggedInUser, atoi(userId));
-                                        if (!validUserId)
-                                            printf("You do not have the user with the input id as an important user,"
-                                                   " please input the id of another important user.\n");
-                                    }
-                                }
+                                userId = obtainImportantUserId(loggedInUser);
                                 printf("Input the new description of the important user.\n");
                                 // choosing new description loop
-                                while (!validDescription) {
-                                    getchar();
-                                    fgets(description, 2000, stdin);
-                                    description[strlen(description) - 1] = 0;
-                                    validDescription = validateDescription(description);
-                                    if (!validDescription)
-                                        printf("The input description is invalid, please input another one.\n");
-                                }
-                                editUser(loggedInUser, validUserId, description);
+                                description = obtainImportantUserDescription();
+                                editUser(loggedInUser, atoi(userId), description);
                                 printf("The user was updated successfully!\n");
+                                free(userId);
+                                free(description);
                             }
                             break;
                             // delete important user
@@ -379,38 +339,19 @@ int main() {
                                        " trying to delete it.\n");
                             else {
                                 // prepare variables for input loops
-                                validUserId = false;
-                                validConfirmation = false;
                                 printf("Input the id of the important user that will be deleted:\n");
-                                displayImportantUsers(loggedInUser);
-                                // choosing an account loop
-                                while (!validUserId) {
-                                    scanf("%s", userId);
-                                    // if the id is invalid (as in it is not a valid integer) display a special message
-                                    if (!validateId(userId))
-                                        printf("The input user id is invalid, please input a valid one.\n");
-                                    else {
-                                        // if the account id was not chosen from the displayed list print a message
-                                        validUserId = checkImportantUser(loggedInUser, atoi(userId));
-                                        if (!validUserId)
-                                            printf("You do not have the user with the input id as an important user,"
-                                                   " please input the id of another important user.\n");
-                                    }
-                                }
+                                userId = obtainImportantUserId(loggedInUser);
                                 // ask for confirmation before deleting the important user
                                 printf("Do you want to delete the selected important user? (y/n)\n");
-                                while (!validConfirmation) {
-                                    scanf("%s", confirmation);
-                                    validConfirmation = validateConfirmation(confirmation);
-                                    if (!validConfirmation)
-                                        printf("The input confirmation is not valid, please input a valid one.\n");
-                                }
+                                confirmation = obtainConfirmation();
                                 // display a message depending on the confirmation
                                 if (strcmp(confirmation, "y") == 0) {
                                     deleteUser(loggedInUser, atoi(userId));
                                     printf("The user was deleted successfully from the list of important users.\n");
                                 } else
                                     printf("The important user with the input id was not deleted.\n");
+                                free(userId);
+                                free(confirmation);
                             }
                             break;
                             // display important users

@@ -51,6 +51,7 @@ bool addUser(int currentUserId, int importantUserId, char description[]) {
         strcat(parsedDescription, "_");
         pointer = strtok(NULL, " ");
     }
+    parsedDescription[strlen(parsedDescription) - 1] = '\0';
     // add the new entry in the db
     importantUsersDB = fopen("../db/importantUsers.txt", "a");
     fprintf(importantUsersDB, "%d %d %d %s %s\n", maxId + 1, currentUserId, importantUserId, importantUserName, parsedDescription);
@@ -174,6 +175,9 @@ void displayImportantUsers(int currentUserId) {
     int idDB, currentUserIdDB, importantUserIdDB;
     char usernameDB[2000], descriptionDB[2000];
     int count = 0;
+    printf("+-----------+-------------------+----------------------------------+\n");
+    printf("|  %-7s  |  %-15s  |  %-30s  |\n", "User id", "Username", "Description");
+    printf("+-----------+-------------------+----------------------------------+\n");
     while (fscanf(importantUsersDB, "%d %d %d %s %s", &idDB, &currentUserIdDB, &importantUserIdDB, usernameDB, descriptionDB) == 5)
         if (currentUserIdDB == currentUserId) {
             //parse description to turn spaces into underlines.
@@ -186,12 +190,16 @@ void displayImportantUsers(int currentUserId) {
                 strcat(parsedDescription, " ");
                 pointer = strtok(NULL, "_");
             }
-            printf("%d %d %d %s %s\n", idDB, currentUserIdDB, importantUserIdDB, usernameDB, parsedDescription);
+            printf("|  %-7d  |  %-15s  |  %-30s  |\n", importantUserIdDB, usernameDB, parsedDescription);
+            printf("+-----------+-------------------+----------------------------------+\n");
+
             count++;
         }
     fclose(importantUsersDB);
-    if (count == 0)
-        printf("There are no important users.\n");
+    if (count == 0) {
+        printf("|  %-7s  |  %-15s  |  %-30s  |\n", " ", " ", " ");
+        printf("+-----------+-------------------+----------------------------------+\n");
+    }
     char formattedString[1000];
     sprintf(formattedString, "The important users of the user with the id of %d were displayed.", currentUserId);
     addActivity(formattedString);

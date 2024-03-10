@@ -23,17 +23,23 @@ void statements(int accountId) {
     float valueDB;
     char typeDB[100];
     int count = 0;
+    printf("+----------------+-------------+-----------+-------------------+------------------+-------+---------+---------+\n");
+    printf("|  %-12s  |  %-9s  |  %-7s  |  %-15s  |  %-14s  |  %-3s  |  %-5s  |  %-5s  |\n", "Statement id", "Source id", "Type", "Balance", "Destination id", "Day", "Month", "Year");
+    printf("+----------------+-------------+-----------+-------------------+------------------+-------+---------+---------+\n");
     // go through the transaction and print those who are made from and towards the account and where made 31 days ago
      while (fscanf(transactionsDB, "%d %d %s %f %d %d %d %d", &idDB, &sourceAccountIdDB, typeDB, &valueDB, &destinationAccountIdDB, &dayDB, &monthDB, &yearDB) == 8)
         if ((accountId == sourceAccountIdDB || accountId == destinationAccountIdDB) && yearDB == currentYear && (currentMonth == monthDB || (currentMonth - monthDB == 1 && currentDay >= dayDB))) {
             if (destinationAccountIdDB == 0)
-                printf("%d %d %s %f %d %d %d\n", idDB, sourceAccountIdDB, typeDB, valueDB, dayDB, monthDB, yearDB);
+                printf("|  %-12d  |  %-9d  |  %-7s  |  %-15f  |  %-14s  |  %-3d  |  %-5d  |  %-5d  |\n", idDB, sourceAccountIdDB, typeDB, valueDB, " ", dayDB, monthDB, yearDB);
             else
-                printf("%d %d %s %f %d %d %d %d\n", idDB, sourceAccountIdDB, typeDB, valueDB, destinationAccountIdDB, dayDB, monthDB, yearDB);
+                printf("|  %-12d  |  %-9d  |  %-7s  |  %-15f  |  %-14d  |  %-3d  |  %-5d  |  %-5d  |\n", idDB, sourceAccountIdDB, typeDB, valueDB, destinationAccountIdDB, dayDB, monthDB, yearDB);
             count++;
+            printf("+----------------+-------------+-----------+-------------------+------------------+-------+---------+---------+\n");
         }
-     if (count == 0)
-         printf("There are no statements to display.\n");
+     if (count == 0) {
+         printf("|  %-12s  |  %-9s  |  %-7s  |  %-15s  |  %-14s  |  %-3s  |  %-5s  |  %-5s  |\n", " ", " ", " ", " ", " ", " ", " ", " ");
+         printf("+----------------+-------------+-----------+-------------------+------------------+-------+---------+---------+\n");
+     }
      char formattedString[1000];
      sprintf(formattedString, "The statements of the account with the id of %d were requested.", accountId);
      addActivity(formattedString);
@@ -82,18 +88,24 @@ void displayTransactions(int accountId) {
     float valueDB;
     char typeDB[100];
     int count = 0;
-
+    printf("+------------------+-------------+-----------+-------------------+------------------+-------+---------+---------+\n");
+    printf("|  %-14s  |  %-9s  |  %-7s  |  %-15s  |  %-14s  |  %-3s  |  %-5s  |  %-5s  |\n", "Transaction id", "Source id", "Type", "Balance", "Destination id", "Day", "Month", "Year");
+    printf("+------------------+-------------+-----------+-------------------+------------------+-------+---------+---------+\n");
     // go through the transactions and print those who are made from and towards the account and where made 31 days ago
      while (fscanf(transactionsDB, "%d %d %s %f %d %d %d %d", &idDB, &sourceAccountIdDB, typeDB, &valueDB, &destinationAccountIdDB, &dayDB, &monthDB, &yearDB) == 8)
         if (accountId == sourceAccountIdDB || accountId == destinationAccountIdDB) {
             if (destinationAccountIdDB == 0)
-                printf("%d %d %s %f %d %d %d\n", idDB, sourceAccountIdDB, typeDB, valueDB, dayDB, monthDB, yearDB);
+                printf("|  %-14d  |  %-9d  |  %-7s  |  %-15f  |  %-14s  |  %-3d  |  %-5d  |  %-5d  |\n", idDB, sourceAccountIdDB, typeDB, valueDB, " ", dayDB, monthDB, yearDB);
             else
-                printf("%d %d %s %f %d %d %d %d\n", idDB, sourceAccountIdDB, typeDB, valueDB, destinationAccountIdDB, dayDB, monthDB, yearDB);
+                printf("|  %-14d  |  %-9d  |  %-7s  |  %-15f  |  %-14d  |  %-3d  |  %-5d  |  %-5d  |\n", idDB, sourceAccountIdDB, typeDB, valueDB, destinationAccountIdDB, dayDB, monthDB, yearDB);
             count++;
+            printf("+------------------+-------------+-----------+-------------------+------------------+-------+---------+---------+\n");
+
         }
-     if (count == 0)
-         printf("There are no transaction to display.\n");
+     if (count == 0) {
+         printf("|  %-14s  |  %-9s  |  %-7s  |  %-15s  |  %-14s  |  %-3s  |  %-5s  |  %-5s  |\n", " ", " ", " ", " ", " ", " ", " ", " ");
+         printf("+------------------+-------------+-----------+-------------------+------------------+-------+---------+---------+\n");
+     }
      char formattedString[1000];
      sprintf(formattedString, "The statements of the account with the id of %d were requested.", accountId);
      addActivity(formattedString);
@@ -111,17 +123,25 @@ void expenses(int accountId) {
     float valueDB;
     char typeDB[100];
     int count = 0;
+    printf("+--------------+-------------+-----------+-------------------+------------------+-------+---------+---------+\n");
+    printf("|  %-10s  |  %-9s  |  %-7s  |  %-15s  |  %-14s  |  %-3s  |  %-5s  |  %-5s  |\n", "Expense id", "Source id", "Type", "Balance", "Destination id", "Day", "Month", "Year");
+    printf("+--------------+-------------+-----------+-------------------+------------------+-------+---------+---------+\n");
+
     // go through the transactions and print the expense that are made from and towards the account with the received id
      while (fscanf(transactionsDB, "%d %d %s %f %d %d %d %d", &idDB, &sourceAccountIdDB, typeDB, &valueDB, &destinationAccountIdDB, &dayDB, &monthDB, &yearDB) == 8)
         if (accountId == sourceAccountIdDB && strcmp(typeDB, "Expense") == 0) {
             if (destinationAccountIdDB == 0)
-                printf("%d %d %s %f %d %d %d\n", idDB, sourceAccountIdDB, typeDB, valueDB, dayDB, monthDB, yearDB);
+                printf("|  %-10d  |  %-9d  |  %-7s  |  %-15f  |  %-14s  |  %-3d  |  %-5d  |  %-5d  |\n", idDB, sourceAccountIdDB, typeDB, valueDB, " ", dayDB, monthDB, yearDB);
             else
-                printf("%d %d %s %f %d %d %d %d\n", idDB, sourceAccountIdDB, typeDB, valueDB, destinationAccountIdDB, dayDB, monthDB, yearDB);
+                printf("|  %-10d  |  %-9d  |  %-7s  |  %-15f  |  %-14d  |  %-3d  |  %-5d  |  %-5d  |\n", idDB, sourceAccountIdDB, typeDB, valueDB, destinationAccountIdDB, dayDB, monthDB, yearDB);
             count++;
+            printf("+--------------+-------------+-----------+-------------------+------------------+-------+---------+---------+\n");
+
         }
-     if (count == 0)
-         printf("There are no expenses to display.\n");
+     if (count == 0) {
+         printf("|  %-10s  |  %-9s  |  %-7s  |  %-15s  |  %-14s  |  %-3s  |  %-5s  |  %-5s  |\n", " ", " ", " ", " ", " ", " ", " ", " ");
+         printf("+--------------+-------------+-----------+-------------------+------------------+-------+---------+---------+\n");
+     }
      char formattedString[1000];
      sprintf(formattedString, "The expenses of the account with the id of %d were requested.", accountId);
      addActivity(formattedString);

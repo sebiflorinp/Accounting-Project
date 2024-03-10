@@ -177,6 +177,9 @@ CMakeFiles/Accounting-Project.dir/libs/obtainData/obtainData.c.o: /home/sebifp/u
   /home/sebifp/ubb/oop/Accounting-Project/utils/utils.h \
   /home/sebifp/ubb/oop/Accounting-Project/libs/models/models.h \
   /home/sebifp/ubb/oop/Accounting-Project/libs/accounts/accounts.h \
+  /home/sebifp/ubb/oop/Accounting-Project/libs/importantUsers/importantUsers.h \
+  /home/sebifp/ubb/oop/Accounting-Project/libs/models/models.h \
+  /home/sebifp/ubb/oop/Accounting-Project/libs/users/users.h \
   /home/sebifp/ubb/oop/Accounting-Project/libs/validation/validation.h \
   /home/sebifp/ubb/oop/Accounting-Project/libs/obtainData/obtainData.h \
   /usr/include/alloca.h \
@@ -591,7 +594,7 @@ CMakeFiles/Accounting-Project.dir/utils/utils.c.o: /home/sebifp/ubb/oop/Accounti
 
 /home/sebifp/ubb/oop/Accounting-Project/main.c:
 
-/home/sebifp/ubb/oop/Accounting-Project/libs/users/users.h:
+/home/sebifp/ubb/oop/Accounting-Project/libs/users/users.c:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
@@ -605,7 +608,7 @@ CMakeFiles/Accounting-Project.dir/utils/utils.c.o: /home/sebifp/ubb/oop/Accounti
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
-/home/sebifp/ubb/oop/Accounting-Project/libs/users/users.c:
+/home/sebifp/ubb/oop/Accounting-Project/libs/users/users.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
