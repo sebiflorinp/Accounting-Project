@@ -58,7 +58,7 @@ Run the project
 
 ## Screenshots
 
-![App Screenshot](https://snipboard.io/IAwhXD.jpg)
+![App Screenshot](https://snipboard.io/O1z8F2.jpg)
 
 ## Documentation
 
