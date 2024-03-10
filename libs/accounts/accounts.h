@@ -4,15 +4,14 @@
 #include <stdbool.h>
 #include "../models/models.h"
 
-// function that adds a financial account in the db
-    bool createAccount(int ownerID, char* name, char* type, Account* accounts, int numberOfAccounts);
+    // function that adds a financial account in the db
+    bool createAccount(int ownerID, char* name, char* type);
 
     // function that edits a financial account in the db
-    bool editAccount(int ownerId, int accountId, char* newName, char* newType, Account* accounts, int numberOfAccounts);
+    bool editAccount(int ownerId, int accountId, char* newName, char* newType);
 
     // function that deletes a financial account in the db
     bool deleteAccount(int ownerId, int accountId);
-
     // function that displays the accounts of an user
     bool displayAccounts(int ownerId);
 

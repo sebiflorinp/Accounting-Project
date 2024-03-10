@@ -23,9 +23,9 @@
     typedef struct {
         int accountId;
         int ownerId;
-        char name[200];
+        char name[20];
         float balance;
-        char type[200];
+        char type[20];
     } Account;
 
     // important user model

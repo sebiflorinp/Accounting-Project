@@ -118,3 +118,177 @@ Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 15 Second: 37
 The user with the id of 1 logged in.
 Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 18 Second: 14
 
+The user with the id of 1 logged in.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 19 Second: 8
+
+The user with the id of 4 has created the account with the id of 1, name of something and type of 1.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 19 Second: 29
+
+The user with the id of 1 edited the account with the id of 4 with the new name of youuuu and type of 2.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 20 Second: 15
+
+The user with the id of 1 deleted the account with the id of 4.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 20 Second: 28
+
+The user with the id of 5 has created the account with the id of 1, name of asdfgh and type of 2.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 20 Second: 38
+
+The statements of the account with the id of 4 were requested.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 20 Second: 49
+
+The user with the id of 1 has requested their balances.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 20 Second: 57
+
+The user with the id of 1 logged out.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 21 Second: 10
+
+The user with the id of 1 logged in.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 22 Second: 36
+
+The user with the id of 1 deposited 10.000000 money in the account with the id of 4.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 22 Second: 44
+
+The user with the id of 1 deleted the account with the id of 4.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 22 Second: 52
+
+The user with the id of 1 deposited 100.000000 money in the account with the id of 5.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 23 Second: 9
+
+The user with the id of 1 has requested their balances.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 23 Second: 15
+
+The user with the id of 1 logged out.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 23 Second: 21
+
+The user with the id of 1 logged in.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 23 Second: 55
+
+The statements of the account with the id of 5 were requested.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 24 Second: 7
+
+The user with the id of 1 added the user with the id of 2 on the list of important users with the description of fdsfds.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 24 Second: 33
+
+The user with the id of 6 has created the account with the id of 1, name of sdadsa and type of 1.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 24 Second: 48
+
+The user with the id of 1 deposited 5.000000 money in the account with the id of 5.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 25 Second: 36
+
+The important users of the user with the id of 1 were displayed.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 25 Second: 39
+
+The user with the id of 1 deleted the user with the id of 3 from the list of important users.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 25 Second: 56
+
+The expenses of the account with the id of 5 were requested.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 26 Second: 8
+
+The statements of the account with the id of 5 were requested.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 26 Second: 19
+
+The user with the id of 1 logged out.
+Year: 2024 Month: 3 Day: 9 Hour: 20 Minute: 26 Second: 44
+
+The user with the id of 1 logged in.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 37 Second: 56
+
+The user with the id of 1 has requested their balances.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 38 Second: 5
+
+The user with the id of 1 deleted the account with the id of 5.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 38 Second: 25
+
+The user with the id of 1 deleted the account with the id of 6.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 38 Second: 34
+
+The user with the id of 1 has requested their balances.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 38 Second: 37
+
+The user with the id of 1 logged in.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 39 Second: 40
+
+The user with the id of 1 has requested their balances.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 39 Second: 47
+
+The user with the id of 1 logged in.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 44 Second: 11
+
+The user with the id of 1936158314 has created the account with the id of 1, name of fdsfdsfsd and type of 2.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 44 Second: 20
+
+The user with the id of 1936158314 has created the account with the id of 1, name of fdsfdsf and type of 3.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 44 Second: 31
+
+The user with the id of 1 logged in.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 51 Second: 0
+
+The user with the id of 1 has created the account with the id of 2, name of safddss and type of 1.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 51 Second: 11
+
+The user with the id of 1 logged out.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 51 Second: 18
+
+The user with the id of 1 logged in.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 51 Second: 39
+
+The user with the id of 1 has created the account with the id of 1, name of asdsafd and type of 1.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 51 Second: 44
+
+The user with the id of 1 deleted the account with the id of 1.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 51 Second: 54
+
+The user with the id of 1 has created the account with the id of 1, name of safdgh and type of 2.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 52 Second: 1
+
+The user with the id of 1 logged out.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 52 Second: 3
+
+The user with the id of 1 logged in.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 52 Second: 19
+
+The user with the id of 1 edited the account with the id of 1 with the new name of asdfgh and type of 3.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 52 Second: 28
+
+The user with the id of 1 logged out.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 52 Second: 32
+
+The user with the id of 1 logged in.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 55 Second: 9
+
+The user with the id of 1 has created the account with the id of 2, name of ssssddfgg and type of Savings.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 55 Second: 15
+
+The user with the id of 1 edited the account with the id of 1 with the new name of asdf and type of 3.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 55 Second: 28
+
+The user with the id of 1 deleted the account with the id of 2.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 55 Second: 35
+
+The user with the id of 1 has created the account with the id of 2, name of asdfgh and type of Savings.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 55 Second: 41
+
+The user with the id of 1 has created the account with the id of 3, name of qwerty and type of Credits.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 55 Second: 46
+
+The user with the id of 1 deleted the account with the id of 1.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 55 Second: 53
+
+The user with the id of 1 edited the account with the id of 2 with the new name of bvcbvcbv and type of 3.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 56 Second: 0
+
+The user with the id of 1 logged out.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 56 Second: 4
+
+The user with the id of 1 logged in.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 58 Second: 5
+
+The user with the id of 1 edited the account with the id of 2 with the new name of sdfg and type of Credits.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 58 Second: 16
+
+The user with the id of 1 edited the account with the id of 3 with the new name of qqqqqqq and type of Savings.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 58 Second: 25
+
+The user with the id of 1 logged out.
+Year: 2024 Month: 3 Day: 10 Hour: 10 Minute: 58 Second: 27
+

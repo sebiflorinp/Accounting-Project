@@ -52,13 +52,19 @@ void balances(int userId) {
     char nameDB[100], typeDB[100];
     // go through all accounts and print the id, name and statement of those that are owned by the user with the received id
     int count = 0;
+    printf("+--------------+------------------------+------------------------+\n");
+    printf("|  %-10s  |  %-20s  |  %-20s  |\n", "Account id", "Name", "Balance");
+    printf("+--------------+------------------------+------------------------+\n");
     while (fscanf(accountsDB, "%d %d %s %f %s", &accountIdDB, &ownerIdDB, nameDB, &balanceDB, typeDB) == 5)
         if (userId == ownerIdDB) {
-            printf("%d %s %f\n", accountIdDB, nameDB, balanceDB);
+            printf("|  %-10d  |  %-20s  |  %-20f  |\n", accountIdDB, nameDB, balanceDB);
+            printf("+--------------+------------------------+------------------------+\n");
             count++;
         }
-    if (count == 0)
-        printf("There are no accounts whose balance to display.\n");
+    if (count == 0) {
+        printf("|  %-10s  |  %-20s  |  %-20s  |\n", " ", " ", " ");
+        printf("+--------------+------------------------+------------------------+\n");
+    }
     char formattedString[1000];
     sprintf(formattedString, "The user with the id of %d has requested their balances.", userId);
     addActivity(formattedString);
@@ -76,6 +82,7 @@ void displayTransactions(int accountId) {
     float valueDB;
     char typeDB[100];
     int count = 0;
+
     // go through the transactions and print those who are made from and towards the account and where made 31 days ago
      while (fscanf(transactionsDB, "%d %d %s %f %d %d %d %d", &idDB, &sourceAccountIdDB, typeDB, &valueDB, &destinationAccountIdDB, &dayDB, &monthDB, &yearDB) == 8)
         if (accountId == sourceAccountIdDB || accountId == destinationAccountIdDB) {

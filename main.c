@@ -99,11 +99,11 @@ int main() {
                 printf("The was not a valid action, please choose a valid one!\n");
                 printf("Press ENTER key to continue\n");
                 getchar();
+                printf("In order to interact with this application you need to choose one of the following commands:\n");
             }
 
         }
         // print instructions
-        printf("In order to interact with this application you need to choose one of the following commands:\n");
         if (running) {
             printf("In this application you can manage different financial accounts.\n");
             // application menu loop
@@ -130,7 +130,7 @@ int main() {
                             accountName = obtainAccountName();
                             accountType = obtainAccountType();
                             // Check if the account name is already used and give a proper response.
-                            if (createAccount(loggedInUser, accountName, accountType, accounts, numberOfAccounts)) {
+                            if (createAccount(loggedInUser, accountName, accountType)) {
                                 printf("The account was created successfully.\n");
                                 numberOfAccounts++;
                             } else
@@ -152,14 +152,7 @@ int main() {
                                 accountName = obtainAccountName();
                                 accountType = obtainAccountType();
                                 // Check if the update can be done,
-                                if (editAccount(
-                                        loggedInUser,
-                                        atoi(accountId),
-                                        accountName,
-                                        accountType,
-                                        accounts,
-                                        numberOfAccounts
-                                ))
+                                if (editAccount(loggedInUser, atoi(accountId), accountName, accountType))
                                     printf("The account was updated successfully.\n");
                                 else
                                     printf("The input name is already used by another account used by you.\n");
