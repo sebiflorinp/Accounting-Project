@@ -89,7 +89,7 @@ bool validateUsername(char* username) {
         return false;
     // Check if the username is only made of letters and numbers, if it isn't return false
     for (int index = 0; index < strlen(username); index++)
-        if (!(('a' <= username[index] && username[index] <= 'z') || ('A' <= username[index] && username[index] <= 'Z') || ('0' <= username[index] && username[index] <= '9') || username[index] == ' '))
+        if (!(('a' <= username[index] && username[index] <= 'z') || ('A' <= username[index] && username[index] <= 'Z') || ('0' <= username[index] && username[index] <= '9')))
             return false;
     // If the username is only made of letters and numbers and is at least 4 characters long return true
     return true;
